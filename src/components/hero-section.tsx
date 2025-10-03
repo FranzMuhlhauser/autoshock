@@ -30,7 +30,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-black/50"></div>
 
       <div className="relative z-10 container text-center px-4">
-        <Badge variant="secondary" className="mb-4 py-1 px-3 bg-primary/10 border-primary/50 text-primary">Más de 25 años de experiencia</Badge>
+        <Badge variant="secondary" className="mb-4 py-1 px-3 bg-primary/10 border-primary/50 text-primary text-sm">Más de 25 años de experiencia</Badge>
         <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter mb-4 text-white drop-shadow-lg">
           Amortiguadores <span className="text-primary">Auto Shock</span>
         </h1>
