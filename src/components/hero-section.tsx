@@ -39,20 +39,6 @@ export default function HeroSection() {
         </Button>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 z-10 pb-8 lg:pb-16">
-        <div className="container">
-          <div className="mx-auto max-w-4xl backdrop-blur-sm bg-card/50 p-6 rounded-lg border border-border text-center">
-            <p className="text-lg text-white">Confían en nosotros más de 10,000 clientes</p>
-            <div className="mt-2 flex justify-center items-center gap-x-6 text-muted-foreground">
-              <span>25+ Años</span>
-              <span className="text-primary">•</span>
-              <span>10K+ Clientes</span>
-              <span className="text-primary">•</span>
-              <span>Garantía Total</span>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
   );
 }
