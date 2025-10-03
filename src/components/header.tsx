@@ -20,16 +20,16 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
-        <Link href="#inicio" className="flex items-center gap-2" aria-label="Amortiguadores Auto Shock Home">
+        <div className="flex items-center gap-2" aria-label="Amortiguadores Auto Shock Home">
           <Image src="/images/logo_auto_shock.webp" alt="Auto Shock Logo" width={160} height={24} />
-        </Link>
+        </div>
 
         <nav className="hidden md:flex items-center gap-6 text-base">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
-              className="font-medium text-foreground/70 transition-colors hover:text-foreground relative group"
+              className="font-medium text-foreground/70 transition-colors hover:text-foreground relative group text-lg"
             >
               {link.name}
               <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
@@ -49,9 +49,9 @@ export default function Header() {
           </SheetTrigger>
           <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-card">
             <div className="flex justify-between items-center mb-8">
-              <Link href="#inicio" className="flex items-center gap-2" onClick={() => setIsMenuOpen(false)}>
+              <div className="flex items-center gap-2">
                  <Image src="/images/logo_auto_shock.webp" alt="Auto Shock Logo" width={160} height={24} />
-              </Link>
+              </div>
                <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(false)}>
                   <X className="h-6 w-6" />
                   <span className="sr-only">Cerrar menú</span>
