@@ -24,6 +24,10 @@ export const BogeLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="BOGE
 export const EurotecLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="EUROTEC" {...props} />;
 export const MoogLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="MOOG" {...props} />;
 export const ThcLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="THC" {...props} />;
+export const IBNLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="IBN" {...props} />;
+export const KYBLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="KYB" {...props} />;
+export const MonroeLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="MONROE" {...props} />;
+export const StradaLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="STRADA" {...props} />;
 
 export const ChevroletLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="Chevrolet" {...props} />;
 export const FordLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="Ford" {...props} />;

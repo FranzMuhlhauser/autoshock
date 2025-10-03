@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { BilsteinLogo, BogeLogo, CorvenLogo, DaherLogo, EurotecLogo, GabrielLogo, MoogLogo, SachsLogo, ThcLogo } from '@/components/icons';
+import { BilsteinLogo, BogeLogo, CorvenLogo, DaherLogo, EurotecLogo, GabrielLogo, IBNLogo, KYBLogo, MoogLogo, MonroeLogo, SachsLogo, StradaLogo, ThcLogo } from '@/components/icons';
 
 const SectionTitle = ({ children }: { children: React.ReactNode }) => (
     <h2 className="font-headline text-3xl md:text-4xl font-bold text-center mb-12">{children}</h2>
@@ -54,15 +54,19 @@ export default function SpecialtiesSection() {
                         <AccordionContent className="grid md:grid-cols-2 gap-8 pt-4">
                             <div>
                                 {images.amortiguadores && <Image src={images.amortiguadores.imageUrl} alt={images.amortiguadores.description} width={600} height={400} className="rounded-lg object-cover mb-4" data-ai-hint={images.amortiguadores.imageHint}/>}
-                                <p className="text-muted-foreground">Ofrecemos una amplia gama de amortiguadores para vehículos livianos, garantizando seguridad y confort en cada viaje. Trabajamos con las mejores marcas del mercado.</p>
+                                <p className="text-muted-foreground">Eleve la seguridad y el confort de su vehículo con nuestra exclusiva selección de amortiguadores para vehículos livianos de alta performance, respaldados por las prestigiosas marcas Bilstein, Corven, Gabriel, IBN, KYB, Monroe y Strada. Diseñados con tecnología de punta, garantizamos durabilidad excepcional y un manejo superior. Adquiera ahora y experimente la diferencia en cada viaje. ¡Contáctenos hoy para una consulta personalizada!</p>
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-semibold">Marcas Asociadas</h4>
-                                <div className="grid grid-cols-2 gap-4">
+                                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                                     <BrandLogo logo={BilsteinLogo} />
                                     <BrandLogo logo={CorvenLogo} />
                                     <BrandLogo logo={GabrielLogo} />
                                     <BrandLogo logo={SachsLogo} />
+                                    <BrandLogo logo={IBNLogo} />
+                                    <BrandLogo logo={KYBLogo} />
+                                    <BrandLogo logo={MonroeLogo} />
+                                    <BrandLogo logo={StradaLogo} />
                                 </div>
                             </div>
                         </AccordionContent>
