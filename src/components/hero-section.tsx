@@ -30,11 +30,11 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-black/50"></div>
 
       <div className="relative z-10 container text-center px-4">
-        <Badge variant="secondary" className="mb-4 py-1 px-3 bg-primary/10 border-primary/50 text-primary text-sm">Más de 25 años de experiencia</Badge>
+        <Badge variant="secondary" className="mb-4 py-1 px-3 bg-primary/10 border-primary/50 text-primary text-sm md:text-base">Más de 25 años de experiencia</Badge>
         <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter mb-4 text-white drop-shadow-lg">
           Amortiguadores <span className="bg-gradient-to-r from-premium-yellow to-premium-yellow-dark bg-clip-text text-transparent">Auto Shock</span>
         </h1>
-        <p className="font-headline max-w-2xl mx-auto text-xl md:text-2xl text-foreground/80 mb-6 drop-shadow-md">
+        <p className="font-headline max-w-2xl mx-auto text-xl md:text-2xl text-premium-yellow mb-6 drop-shadow-md">
           Calidad Premium que Impulsa tu Camino
         </p>
         <p className="max-w-xl mx-auto text-muted-foreground mb-8">
