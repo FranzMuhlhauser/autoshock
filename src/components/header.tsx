@@ -2,9 +2,9 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Menu } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import Image from 'next/image';
 
 const navLinks = [
@@ -49,9 +49,16 @@ export default function Header() {
           </SheetTrigger>
           <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-card">
              <SheetHeader className="flex-row justify-between items-center mb-8">
+                <SheetTitle className="sr-only">Menú de Navegación</SheetTitle>
                 <div className="flex items-center gap-2">
                    <Image src="/images/logo_auto_shock.webp" alt="Auto Shock Logo" width={160} height={24} />
                 </div>
+                <SheetClose asChild>
+                  <Button variant="ghost" size="icon">
+                    <X className="h-6 w-6" />
+                    <span className="sr-only">Cerrar menú</span>
+                  </Button>
+                </SheetClose>
               </SheetHeader>
             <nav className="flex flex-col gap-6">
               {navLinks.map((link) => (
