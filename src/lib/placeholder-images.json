@@ -1,3 +1,70 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-bg",
+      "description": "Background image for the hero section showing a modern car workshop.",
+      "imageUrl": "https://images.unsplash.com/photo-1643700973089-baa86a1ab9ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjYXIlMjB3b3Jrc2hvcHxlbnwwfHx8fDE3NTk1MTM4Mzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "car workshop"
+    },
+    {
+      "id": "specialty-amortiguadores",
+      "description": "Image of a car shock absorber for light vehicles.",
+      "imageUrl": "https://images.unsplash.com/photo-1623651342869-019b5dd24d4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjYXIlMjBzaG9jayUyMGFic29yYmVyfGVufDB8fHx8MTc1OTUyNTM0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "car shock absorber"
+    },
+    {
+      "id": "specialty-portalon",
+      "description": "Image of a trunk gas spring.",
+      "imageUrl": "https://images.unsplash.com/photo-1678472156730-2d80e958b9a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjYXIlMjB0cnVuayUyMHNob2NrfGVufDB8fHx8MTc1OTUyNTM0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "car trunk shock"
+    },
+    {
+      "id": "specialty-cataliticos",
+      "description": "Image of a catalytic converter.",
+      "imageUrl": "https://images.unsplash.com/photo-1512592990601-6c522134d170?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjYXRhbHl0aWMlMjBjb252ZXJ0ZXJ8ZW58MHx8fHwxNzU5NTI1MzQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "catalytic converter"
+    },
+    {
+      "id": "specialty-camiones",
+      "description": "Image of a heavy-duty shock absorber for trucks.",
+      "imageUrl": "https://images.unsplash.com/photo-1666508330099-0c7c6ab0e332?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx0cnVjayUyMHNob2NrJTIwYWJzb3JiZXJ8ZW58MHx8fHwxNzU5NTI1MzQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "truck shock absorber"
+    },
+    {
+      "id": "tren-delantero-main",
+      "description": "Image representing the front-end assembly of a car.",
+      "imageUrl": "https://images.unsplash.com/photo-1679709161252-0229a8a9b586?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjYXIlMjBzdXNwZW5zaW9ufGVufDB8fHx8MTc1OTUyNTM0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "car suspension"
+    },
+    {
+      "id": "sub-axiales",
+      "description": "Image of an axial joint.",
+      "imageUrl": "https://images.unsplash.com/photo-1665471121424-6361a5c31bf9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjYXIlMjBheGxlfGVufDB8fHx8MTc1OTUyNTM0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "car axle"
+    },
+    {
+      "id": "sub-bandejas",
+      "description": "Image of a suspension control arm.",
+      "imageUrl": "https://images.unsplash.com/photo-1597424020433-e08f7da1175d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzdXNwZW5zaW9uJTIwYXJtfGVufDB8fHx8MTc1OTUyNTM0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "suspension arm"
+    },
+    {
+      "id": "sub-bieletas",
+      "description": "Image of a stabilizer link.",
+      "imageUrl": "https://images.unsplash.com/photo-1681351623077-e4cc438f0548?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjYXIlMjBsaW5rfGVufDB8fHx8MTc1OTUyNTM0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "car link"
+    },
+    {
+      "id": "sub-rotulas",
+      "description": "Image of a ball joint.",
+      "imageUrl": "https://images.unsplash.com/photo-1676030789620-664650aa60a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxiYWxsJTIwam9pbnR8ZW58MHx8fHwxNzU5NTI1MzQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ball joint"
+    },
+    {
+      "id": "sub-terminales",
+      "description": "Image of a tie rod end.",
+      "imageUrl": "https://images.unsplash.com/photo-1597977172397-fed29e53c30d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dGllJTIwcm9kJTIwZW5kfGVufDB8fHx8MTc1OTUyNTM0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tie rod end"
+    }
+  ]
 }
