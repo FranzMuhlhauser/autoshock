@@ -37,7 +37,7 @@ export default function HeroSection() {
         <p className="font-headline max-w-2xl mx-auto text-xl md:text-2xl text-premium-yellow mb-6 drop-shadow-md">
           Calidad Premium que Impulsa tu Camino
         </p>
-        <Button size="lg" asChild>
+        <Button size="lg" asChild className="rounded-full">
           <Link href="#especialidades">Explorar Productos</Link>
         </Button>
       </div>
