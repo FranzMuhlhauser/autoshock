@@ -55,14 +55,10 @@ export default {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
-        'premium-yellow': {
-          DEFAULT: '#FFD700',
-          dark: '#E6C200',
-        },
-        'premium-blue': {
-          DEFAULT: '#3b82f6',
-          dark: '#2563eb',
-        },
+        'premium-yellow': '#FFD700',
+        'premium-yellow-dark': '#E6C200',
+        'premium-blue': '#3b82f6',
+        'premium-blue-dark': '#2563eb',
         chart: {
           '1': 'hsl(var(--chart-1))',
           '2': 'hsl(var(--chart-2))',
