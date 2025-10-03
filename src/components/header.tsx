@@ -53,10 +53,6 @@ export default function Header() {
                 <div className="flex items-center gap-2">
                    <Image src="/images/logo_auto_shock.webp" alt="Auto Shock Logo" width={160} height={24} />
                 </div>
-                 <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(false)}>
-                    <X className="h-6 w-6" />
-                    <span className="sr-only">Cerrar menú</span>
-                 </Button>
               </SheetHeader>
             <nav className="flex flex-col gap-6">
               {navLinks.map((link) => (
