@@ -40,10 +40,10 @@ export default function FaqSection() {
                 <h2 className="font-headline text-3xl md:text-4xl font-bold text-center mb-12">
                     Preguntas Frecuentes
                 </h2>
-                <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto">
+                <Accordion type="single" collapsible className="w-full max-w-4xl mx-auto space-y-4">
                     {faqItems.map((item, index) => (
                         <AccordionItem key={index} value={`item-${index + 1}`}>
-                            <AccordionTrigger className="text-left text-lg hover:no-underline">{item.question}</AccordionTrigger>
+                            <AccordionTrigger className="text-left text-lg font-semibold hover:no-underline">{item.question}</AccordionTrigger>
                             <AccordionContent className="text-muted-foreground text-base">
                                 {item.answer}
                                 {item.videoId && <YoutubeEmbed videoId={item.videoId} />}

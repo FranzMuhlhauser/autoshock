@@ -40,13 +40,13 @@
   }
 
   .dark {
-    --background: 0 0% 4%; /* premium-black */
+    --background: 226 21% 11%; /* Dark Blue */
     --foreground: 0 0% 100%; /* premium-white */
 
-    --card: 0 0% 10%; /* premium-dark */
+    --card: 226 21% 15%; /* Slightly lighter dark blue */
     --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 4%;
+    --popover: 226 21% 11%;
     --popover-foreground: 0 0% 100%;
 
     --primary: 51 100% 50%; /* premium-yellow */
@@ -64,7 +64,7 @@
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 16%; /* premium-gray */
+    --border: 226 21% 20%; /* Border color */
     --input: 0 0% 16%;
     --ring: 51 100% 50%;
   }
