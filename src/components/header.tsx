@@ -24,7 +24,7 @@ export default function Header() {
           <Image src="/images/logo_auto_shock.webp" alt="Auto Shock Logo" width={160} height={24} />
         </Link>
 
-        <nav className="hidden md:flex items-center gap-6 text-sm">
+        <nav className="hidden md:flex items-center gap-6 text-base">
           {navLinks.map((link) => (
             <Link
               key={link.name}
@@ -62,7 +62,7 @@ export default function Header() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="text-lg font-medium"
+                  className="text-xl font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.name}
