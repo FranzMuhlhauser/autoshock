@@ -166,7 +166,7 @@ export default function ContactSection() {
                                     <GoogleMapsLogo className="h-5 w-5" /> Abrir en Google Maps
                                 </a>
                             </Button>
-                            <Button variant="accent" asChild className="w-full bg-accent hover:bg-accent/90">
+                            <Button variant="accent" asChild className="w-full">
                                 <a href="https://waze.com/ul?ll=-33.442922,-70.648268&navigate=yes" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                                     <WazeLogo className="h-5 w-5" /> Abrir en Waze
                                 </a>
