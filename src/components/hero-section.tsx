@@ -12,20 +12,17 @@ const TrustIndicator = ({ value, label }: { value: string; label: string }) => (
 );
 
 export default function HeroSection() {
-  const heroImage = PlaceHolderImages.find(p => p.id === 'hero-bg');
 
   return (
     <section id="inicio" className="relative w-full min-h-screen flex items-center justify-center">
-      {heroImage && (
-        <Image
-          src={heroImage.imageUrl}
-          alt={heroImage.description}
+      <Image
+          src="/images/hero/hero.webp"
+          alt="Taller mecánico de Auto Shock"
           fill
           className="object-cover"
           priority
-          data-ai-hint={heroImage.imageHint}
+          data-ai-hint="car workshop"
         />
-      )}
       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
       <div className="absolute inset-0 bg-black/50"></div>
 
