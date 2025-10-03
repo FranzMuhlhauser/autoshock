@@ -46,7 +46,7 @@ export default function SpecialtiesSection() {
     return (
         <section id="especialidades" className="py-20 md:py-32 bg-card">
             <div className="container">
-                <SectionTitle>Nuestras Especialidades</SectionTitle>
+                <SectionTitle>Nuestras <span className="text-primary">Especialidades</span></SectionTitle>
                 <Accordion type="single" collapsible defaultValue="item-1" className="w-full max-w-4xl mx-auto">
                     
                     <AccordionItem value="item-1">
