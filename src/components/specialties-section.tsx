@@ -4,7 +4,7 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { BilsteinLogo, BogeLogo, CorvenLogo, DaherLogo, EurotecLogo, GabrielLogo, IBNLogo, KYBLogo, MoogLogo, MonroeLogo, SachsLogo, StradaLogo, ThcLogo } from '@/components/icons';
 
 const SectionTitle = ({ children }: { children: React.ReactNode }) => (
-    <h2 className="font-headline text-3xl md:text-4xl font-bold text-center mb-12">{children}</h2>
+    <h2 className="font-headline text-3xl md:text-4xl font-bold text-center mb-4">{children}</h2>
 );
 
 const BrandLogo = ({ logo: Logo }: { logo: React.ElementType }) => (
@@ -47,6 +47,9 @@ export default function SpecialtiesSection() {
         <section id="especialidades" className="py-20 md:py-32 bg-card">
             <div className="container">
                 <SectionTitle>Nuestras <span className="text-primary">Especialidades</span></SectionTitle>
+                <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12">
+                    Soluciones automotrices de alta gama, seleccionadas para el máximo rendimiento y durabilidad.
+                </p>
                 <Accordion type="single" collapsible defaultValue="item-1" className="w-full max-w-4xl mx-auto">
                     
                     <AccordionItem value="item-1">
