@@ -55,7 +55,7 @@ export default function SpecialtiesSection() {
                         <AccordionTrigger className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Amortiguadores para Vehículos Livianos</AccordionTrigger>
                         <AccordionContent className="pt-4">
                             <p className="text-muted-foreground text-justify mb-6">Eleve la seguridad y el confort de su vehículo con nuestra exclusiva selección de amortiguadores para vehículos livianos de alta performance, respaldados por las prestigiosas marcas Bilstein, Corven, Gabriel, IBN, KYB, Monroe y Strada. Diseñados con tecnología de punta, garantizamos durabilidad excepcional y un manejo superior. Adquiera ahora y experimente la diferencia en cada viaje. ¡Contáctenos hoy para una consulta personalizada!</p>
-                            <div className="max-w-3xl mx-auto mb-8">
+                            <div className="w-4/5 mx-auto mb-8">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <div className="overflow-hidden rounded-lg">
                                         <Image src="/images/productos/amortiguador_daher.webp" alt="Amortiguador Daher" width={600} height={400} className="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-110" />
