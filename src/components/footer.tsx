@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { AutoShockLogo } from '@/components/icons';
 import { Mail, MapPin, Phone } from 'lucide-react';
+import Image from 'next/image';
 
 const navLinks = [
   { name: 'Inicio', href: '#inicio' },
@@ -17,7 +17,7 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div className="md:col-span-2 space-y-4">
                         <Link href="#inicio" className="flex items-center gap-2">
-                            <AutoShockLogo className="h-8 w-auto text-primary" />
+                            <Image src="/images/logo_auto_shock.webp" alt="Auto Shock Logo" width={160} height={24} />
                         </Link>
                         <p className="max-w-xs text-muted-foreground">
                             Calidad premium en repuestos automotrices que impulsa tu camino, con más de 25 años de experiencia.

@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { AutoShockLogo } from '@/components/icons';
+import Image from 'next/image';
 
 const navLinks = [
   { name: 'Inicio', href: '#inicio' },
@@ -21,7 +21,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link href="#inicio" className="flex items-center gap-2" aria-label="Amortiguadores Auto Shock Home">
-          <AutoShockLogo className="h-8 w-auto text-primary" />
+          <Image src="/images/logo_auto_shock.webp" alt="Auto Shock Logo" width={160} height={24} />
         </Link>
 
         <nav className="hidden md:flex items-center gap-6 text-sm">
@@ -50,7 +50,7 @@ export default function Header() {
           <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-card">
             <div className="flex justify-between items-center mb-8">
               <Link href="#inicio" className="flex items-center gap-2" onClick={() => setIsMenuOpen(false)}>
-                <AutoShockLogo className="h-8 w-auto text-primary" />
+                 <Image src="/images/logo_auto_shock.webp" alt="Auto Shock Logo" width={160} height={24} />
               </Link>
                <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(false)}>
                   <X className="h-6 w-6" />
