@@ -65,8 +65,8 @@ export default function SpecialtiesSection() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="mt-8">
-                                <h4 className="font-semibold text-center mb-4">Marcas Asociadas</h4>
+                            <div className="mt-4">
+                                <h4 className="font-semibold text-center text-lg mb-4">Marcas Asociadas</h4>
                                 <div className="grid grid-cols-4 md:grid-cols-8 gap-4">
                                     <BrandLogo logo={BilsteinLogo} />
                                     <BrandLogo logo={CorvenLogo} />
