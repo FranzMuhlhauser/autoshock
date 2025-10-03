@@ -52,16 +52,20 @@ export default function SpecialtiesSection() {
                 </p>
                 <Accordion type="single" collapsible defaultValue="item-1" className="w-full max-w-4xl mx-auto space-y-4">
                     
-                    <AccordionItem value="item-1" className="bg-card/90 border-premium-yellow-dark/40">
+                    <AccordionItem value="item-1" className="bg-background border-primary/20">
                         <AccordionTrigger className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Amortiguadores para Vehículos Livianos</AccordionTrigger>
-                        <AccordionContent className="grid md:grid-cols-2 gap-8 pt-4">
-                            <div>
-                                <p className="text-muted-foreground text-justify mb-4">Eleve la seguridad y el confort de su vehículo con nuestra exclusiva selección de amortiguadores para vehículos livianos de alta performance, respaldados por las prestigiosas marcas Bilstein, Corven, Gabriel, IBN, KYB, Monroe y Strada. Diseñados con tecnología de punta, garantizamos durabilidad excepcional y un manejo superior. Adquiera ahora y experimente la diferencia en cada viaje. ¡Contáctenos hoy para una consulta personalizada!</p>
-                                {images.amortiguadores && <Image src={images.amortiguadores.imageUrl} alt={images.amortiguadores.description} width={600} height={400} className="rounded-lg object-cover" data-ai-hint={images.amortiguadores.imageHint}/>}
+                        <AccordionContent className="pt-4">
+                            <div className="grid md:grid-cols-2 gap-8">
+                                <div>
+                                     <p className="text-muted-foreground text-justify mb-4">Eleve la seguridad y el confort de su vehículo con nuestra exclusiva selección de amortiguadores para vehículos livianos de alta performance, respaldados por las prestigiosas marcas Bilstein, Corven, Gabriel, IBN, KYB, Monroe y Strada. Diseñados con tecnología de punta, garantizamos durabilidad excepcional y un manejo superior. Adquiera ahora y experimente la diferencia en cada viaje. ¡Contáctenos hoy para una consulta personalizada!</p>
+                                </div>
+                                <div>
+                                    {images.amortiguadores && <Image src={images.amortiguadores.imageUrl} alt={images.amortiguadores.description} width={600} height={400} className="rounded-lg object-cover" data-ai-hint={images.amortiguadores.imageHint}/>}
+                                </div>
                             </div>
-                            <div className="space-y-4">
-                                <h4 className="font-semibold">Marcas Asociadas</h4>
-                                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                            <div className="mt-8">
+                                <h4 className="font-semibold text-center mb-4">Marcas Asociadas</h4>
+                                <div className="grid grid-cols-4 md:grid-cols-8 gap-4">
                                     <BrandLogo logo={BilsteinLogo} />
                                     <BrandLogo logo={CorvenLogo} />
                                     <BrandLogo logo={GabrielLogo} />
@@ -75,7 +79,7 @@ export default function SpecialtiesSection() {
                         </AccordionContent>
                     </AccordionItem>
 
-                    <AccordionItem value="item-2" className="bg-card/90 border-premium-yellow-dark/40">
+                    <AccordionItem value="item-2" className="bg-background border-primary/20">
                         <AccordionTrigger className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Amortiguadores de Portalón</AccordionTrigger>
                         <AccordionContent className="grid md:grid-cols-2 gap-8 pt-4">
                              <div>
@@ -92,7 +96,7 @@ export default function SpecialtiesSection() {
                         </AccordionContent>
                     </AccordionItem>
                     
-                    <AccordionItem value="item-3" className="bg-card/90 border-premium-yellow-dark/40">
+                    <AccordionItem value="item-3" className="bg-background border-primary/20">
                         <AccordionTrigger className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Catalíticos</AccordionTrigger>
                         <AccordionContent className="grid md:grid-cols-2 gap-8 pt-4">
                             <div>
@@ -108,7 +112,7 @@ export default function SpecialtiesSection() {
                         </AccordionContent>
                     </AccordionItem>
 
-                    <AccordionItem value="item-4" className="bg-card/90 border-premium-yellow-dark/40">
+                    <AccordionItem value="item-4" className="bg-background border-primary/20">
                         <AccordionTrigger className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Amortiguadores para Camiones y Autobuses</AccordionTrigger>
                         <AccordionContent className="grid md:grid-cols-2 gap-8 pt-4">
                             <div>
@@ -125,7 +129,7 @@ export default function SpecialtiesSection() {
                         </AccordionContent>
                     </AccordionItem>
 
-                    <AccordionItem value="item-5" className="bg-card/90 border-premium-yellow-dark/40">
+                    <AccordionItem value="item-5" className="bg-background border-primary/20">
                         <AccordionTrigger className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Tren Delantero</AccordionTrigger>
                         <AccordionContent className="grid md:grid-cols-2 gap-8 pt-4">
                             <div>
