@@ -35,7 +35,7 @@ export default function Header() {
               <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
             </Link>
           ))}
-          <Button asChild>
+          <Button asChild className="rounded-full">
             <Link href="#contacto">Contacto</Link>
           </Button>
         </nav>
@@ -68,7 +68,7 @@ export default function Header() {
                   {link.name}
                 </Link>
               ))}
-              <Button asChild className="mt-4">
+              <Button asChild className="mt-4 rounded-full">
                 <Link href="#contacto" onClick={() => setIsMenuOpen(false)}>Contacto</Link>
               </Button>
             </nav>
