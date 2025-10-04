@@ -138,7 +138,7 @@ export default function SpecialtiesSection() {
                         <AccordionContent className="grid md:grid-cols-2 gap-8 pt-4">
                             <div>
                                 {images.camiones && <Image src={images.camiones.imageUrl} alt={images.camiones.description} width={600} height={400} className="rounded-lg object-cover mb-4" data-ai-hint={images.camiones.imageHint} />}
-                                <p className="text-muted-foreground">Soluciones robustas para el transporte pesado. Nuestros amortiguadores para camiones y buses están diseñados para resistir las condiciones más exigentes.</p>
+                                <p className="text-muted-foreground">Repuestos especiales para vehículos de carga y transporte, diseñados para resistir el uso intensivo. Nuestros amortiguadores para camiones y autobuses ofrecen la durabilidad y resistencia necesarias para el transporte comercial y de pasajeros. Garantizamos productos de alta calidad que soportan las exigencias del trabajo pesado.</p>
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-semibold text-center text-xl mb-4 text-premium-yellow">Marcas Asociadas</h4>
@@ -178,4 +178,5 @@ export default function SpecialtiesSection() {
     
 
     
+
 
