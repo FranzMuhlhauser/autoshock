@@ -132,7 +132,6 @@ export default function SpecialtiesSection() {
                                 <p className="text-muted-foreground">Asegure el cumplimiento normativo y la eficiencia de su vehículo con nuestros catalizadores homologados de la marca Gabriel. Fabricados con tecnología de vanguardia, garantizan una reducción óptima de emisiones y un rendimiento excepcional. Adquiera ahora y conduzca con confianza hacia un futuro más limpio. ¡Contáctenos para más información!</p>
                             </div>
                              <div className="space-y-4">
-                                <h4 className="font-semibold text-center text-xl mb-4 text-premium-yellow">Marca Asociada</h4>
                                 <div className="grid grid-cols-2 gap-4">
                                     <BrandLogo logo={GabrielLogo} />
                                 </div>
@@ -172,7 +171,6 @@ export default function SpecialtiesSection() {
                                 <div className="grid grid-cols-2 gap-4">
                                     <BrandLogo logo={MoogLogo} />
                                     <BrandLogo logo={ThcLogo} />
-                                d_iva_logo/>
                                 </div>
                             </div>
                         </AccordionContent>
