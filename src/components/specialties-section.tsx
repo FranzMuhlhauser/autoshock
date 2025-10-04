@@ -66,7 +66,7 @@ export default function SpecialtiesSection() {
                 <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12">
                     Soluciones automotrices de alta gama, seleccionadas para el máximo rendimiento y durabilidad.
                 </p>
-                <Accordion type="single" collapsible defaultValue="item-1" className="w-full max-w-4xl mx-auto space-y-4">
+                <Accordion type="single" collapsible className="w-full max-w-4xl mx-auto space-y-4">
                     
                     <AccordionItem value="item-1" className="bg-background border-primary/20">
                         <AccordionTrigger onClick={handleTriggerClick} className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Amortiguadores para Vehículos Livianos</AccordionTrigger>
