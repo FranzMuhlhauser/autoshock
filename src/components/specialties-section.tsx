@@ -103,16 +103,11 @@ export default function SpecialtiesSection() {
 
                     <AccordionItem value="item-2" className="bg-background border-primary/20">
                         <AccordionTrigger onClick={handleTriggerClick} className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Amortiguadores de Portalón</AccordionTrigger>
-                        <AccordionContent className="grid md:grid-cols-2 gap-8 pt-4">
-                             <div>
+                        <AccordionContent className="pt-4">
+                             <div className="space-y-4">
                                 <p className="text-muted-foreground text-justify mb-4">Optimice la funcionalidad y seguridad de su vehículo con nuestros amortiguadores de portalón de la reconocida marca Daher/Boge, diseñados con precisión y tecnología avanzada. Ofrecen resistencia superior y un cierre suave, ideales para un uso confiable a largo plazo. Adquiera hoy mismo y eleve la experiencia de su maletero. ¡Contáctenos para más detalles!</p>
-                                {images.portalon && <Image src={images.portalon.imageUrl} alt={images.portalon.description} width={600} height={400} className="rounded-lg object-cover" data-ai-hint={images.portalon.imageHint}/>}
-                            </div>
-                            <div className="space-y-4">
-                                <h4 className="font-semibold text-center text-lg mb-4 text-premium-yellow">Marcas Asociadas</h4>
-                                <div>
-                                    
-                                </div>
+                                {images.portalon && <Image src={images.portalon.imageUrl} alt={images.portalon.description} width={600} height={400} className="rounded-lg object-cover w-full" data-ai-hint={images.portalon.imageHint}/>}
+                                <h4 className="font-semibold text-center text-lg mt-4 text-premium-yellow">Marcas Asociadas</h4>
                             </div>
                         </AccordionContent>
                     </AccordionItem>
