@@ -113,7 +113,6 @@ export default function SpecialtiesSection() {
                                         </div>
                                     </div>
                                 </div>
-                                <h4 className="font-semibold text-center text-xl mt-4 text-premium-yellow">Marcas Asociadas</h4>
                                 <div className="mt-4 flex justify-center">
                                      <Image src="/images/Logos/logo_daher.webp" alt="Daher Logo" width={180} height={50} className="object-contain transition-transform duration-300 hover:scale-110" />
                                 </div>
@@ -138,7 +137,7 @@ export default function SpecialtiesSection() {
                         <AccordionContent className="grid md:grid-cols-2 gap-8 pt-4">
                             <div>
                                 <p className="text-muted-foreground mb-4">Repuestos especiales para vehículos de carga y transporte, diseñados para resistir el uso intensivo. Nuestros amortiguadores para camiones y autobuses ofrecen la durabilidad y resistencia necesarias para el transporte comercial y de pasajeros. Garantizamos productos de alta calidad que soportan las exigencias del trabajo pesado.</p>
-                                {images.camiones && <Image src={images.camiones.imageUrl} alt={images.camiones.description} width={600} height={400} className="rounded-lg object-cover" data-ai-hint={images.camiones.imageHint} />}
+                                <Image src="/images/productos/amortiguador_camion.webp" alt="Amortiguador de camión" width={600} height={400} className="rounded-lg object-cover transition-transform duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-semibold text-center text-xl mb-4 text-premium-yellow">Marcas Asociadas</h4>
@@ -178,6 +177,7 @@ export default function SpecialtiesSection() {
     
 
     
+
 
 
 
