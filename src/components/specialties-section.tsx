@@ -66,7 +66,7 @@ export default function SpecialtiesSection() {
                                 </div>
                             </div>
                             <div className="mt-2">
-                                <h4 className="font-semibold text-center text-lg mb-4 text-premium-yellow">Nuestras Marcas Destacadas</h4>
+                                <h4 className="font-semibold text-center text-xl mb-4 text-premium-yellow">Nuestras Marcas Destacadas</h4>
                                 <div className="flex justify-center items-center gap-4">
                                     <Image src="/images/Logos/Bilstein-logo.webp" alt="Bilstein Logo" width={140} height={40} className="object-contain transition-transform duration-300 hover:scale-110" />
                                     <Image src="/images/Logos/corven-logo.webp" alt="Corven Logo" width={140} height={40} className="object-contain transition-transform duration-300 hover:scale-110" />
@@ -85,7 +85,7 @@ export default function SpecialtiesSection() {
                                 <p className="text-muted-foreground">Amortiguadores de gas para portalones y capós que aseguran una apertura y cierre suaves y seguros. Compatibles con una gran variedad de modelos.</p>
                             </div>
                             <div className="space-y-4">
-                                <h4 className="font-semibold">Marcas Asociadas</h4>
+                                <h4 className="font-semibold text-center text-lg mb-4 text-premium-yellow">Marcas Asociadas</h4>
                                 <div className="grid grid-cols-2 gap-4">
                                     <BrandLogo logo={DaherLogo} />
                                     <BrandLogo logo={BogeLogo} />
@@ -102,7 +102,7 @@ export default function SpecialtiesSection() {
                                 <p className="text-muted-foreground">Convertidores catalíticos que cumplen con las normativas ambientales, mejorando el rendimiento del motor y reduciendo las emisiones contaminantes.</p>
                             </div>
                              <div className="space-y-4">
-                                <h4 className="font-semibold">Marca Asociada</h4>
+                                <h4 className="font-semibold text-center text-lg mb-4 text-premium-yellow">Marca Asociada</h4>
                                 <div className="grid grid-cols-2 gap-4">
                                     <BrandLogo logo={GabrielLogo} />
                                 </div>
@@ -118,10 +118,9 @@ export default function SpecialtiesSection() {
                                 <p className="text-muted-foreground">Soluciones robustas para el transporte pesado. Nuestros amortiguadores para camiones y buses están diseñados para resistir las condiciones más exigentes.</p>
                             </div>
                             <div className="space-y-4">
-                                <h4 className="font-semibold">Marcas Asociadas</h4>
+                                <h4 className="font-semibold text-center text-lg mb-4 text-premium-yellow">Marcas Asociadas</h4>
                                 <div className="grid grid-cols-2 gap-4">
                                     <BrandLogo logo={EurotecLogo} />
-                                    <BrandLogo logo={SachsLogo} />
                                 </div>
                             </div>
                         </AccordionContent>
@@ -139,7 +138,7 @@ export default function SpecialtiesSection() {
                             </div>
                             <div className="space-y-4">
                                 {images.trenDelantero && <Image src={images.trenDelantero.imageUrl} alt={images.trenDelantero.description} width={600} height={400} className="rounded-lg object-cover mb-4" data-ai-hint={images.trenDelantero.imageHint}/>}
-                                 <h4 className="font-semibold">Marcas Especializadas</h4>
+                                 <h4 className="font-semibold text-center text-lg mb-4 text-premium-yellow">Marcas Especializadas</h4>
                                 <div className="grid grid-cols-2 gap-4">
                                     <BrandLogo logo={MoogLogo} />
                                     <BrandLogo logo={ThcLogo} />
