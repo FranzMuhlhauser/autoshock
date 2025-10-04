@@ -72,7 +72,6 @@ export default function SpecialtiesSection() {
                                     <Image src="/images/Logos/corven-logo.webp" alt="Corven Logo" width={140} height={40} className="object-contain" />
                                     <Image src="/images/Logos/Gabriel_logo.webp" alt="Gabriel Logo" width={140} height={40} className="object-contain" />
                                     <Image src="/images/Logos/ibn-logo.webp" alt="IBN Logo" width={140} height={40} className="object-contain" />
-                                    <BrandLogo logo={KYBLogo} />
                                     <BrandLogo logo={MonroeLogo} />
                                     <BrandLogo logo={StradaLogo} />
                                 </div>
