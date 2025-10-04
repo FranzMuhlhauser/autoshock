@@ -134,14 +134,14 @@ export default function SpecialtiesSection() {
 
                     <AccordionItem value="item-4" className="bg-background border-primary/20">
                         <AccordionTrigger onClick={handleTriggerClick} className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Amortiguadores para Camiones y Autobuses</AccordionTrigger>
-                        <AccordionContent className="grid md:grid-cols-2 gap-8 pt-4">
-                            <div>
-                                <p className="text-muted-foreground mb-4">Repuestos especiales para vehículos de carga y transporte, diseñados para resistir el uso intensivo. Nuestros amortiguadores para camiones y autobuses ofrecen la durabilidad y resistencia necesarias para el transporte comercial y de pasajeros. Garantizamos productos de alta calidad que soportan las exigencias del trabajo pesado.</p>
-                                <Image src="/images/productos/amortiguador_camion.webp" alt="Amortiguador de camión" width={600} height={400} className="rounded-lg object-cover transition-transform duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
-                            </div>
-                            <div className="space-y-4">
-                                <h4 className="font-semibold text-center text-xl mb-4 text-premium-yellow">Marcas Asociadas</h4>
-                                
+                        <AccordionContent className="pt-4">
+                            <div className="grid md:grid-cols-2 gap-8 items-center">
+                                <div className="space-y-4">
+                                    <p className="text-muted-foreground text-justify">Repuestos especiales para vehículos de carga y transporte, diseñados para resistir el uso intensivo. Nuestros amortiguadores para camiones y autobuses ofrecen la durabilidad y resistencia necesarias para el transporte comercial y de pasajeros. Garantizamos productos de alta calidad que soportan las exigencias del trabajo pesado.</p>
+                                    <Image src="/images/productos/amortiguador_camion.webp" alt="Amortiguador de camión" width={600} height={400} className="rounded-lg object-cover transition-transform duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
+                                </div>
+                                <div className="space-y-4">
+                                </div>
                             </div>
                         </AccordionContent>
                     </AccordionItem>
@@ -175,6 +175,7 @@ export default function SpecialtiesSection() {
     
 
     
+
 
 
 
