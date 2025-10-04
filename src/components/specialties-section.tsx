@@ -67,11 +67,10 @@ export default function SpecialtiesSection() {
                             </div>
                             <div className="mt-2">
                                 <h4 className="font-semibold text-center text-lg mb-4 text-primary">Nuestras Marcas Destacadas</h4>
-                                <div className="grid grid-cols-4 md:grid-cols-8 gap-4">
+                                <div className="grid grid-cols-4 md:grid-cols-7 gap-4">
                                     <BrandLogo logo={BilsteinLogo} />
                                     <BrandLogo logo={CorvenLogo} />
                                     <BrandLogo logo={GabrielLogo} />
-                                    <BrandLogo logo={SachsLogo} />
                                     <BrandLogo logo={IBNLogo} />
                                     <BrandLogo logo={KYBLogo} />
                                     <BrandLogo logo={MonroeLogo} />
