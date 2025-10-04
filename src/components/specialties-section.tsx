@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { BilsteinLogo, BogeLogo, CorvenLogo, DaherLogo, EurotecLogo, GabrielLogo, IBNLogo, KYBLogo, MoogLogo, MonroeLogo, SachsLogo, StradaLogo, ThcLogo } from '@/components/icons';
+import { BogeLogo, CorvenLogo, DaherLogo, EurotecLogo, GabrielLogo, IBNLogo, KYBLogo, MoogLogo, MonroeLogo, SachsLogo, StradaLogo, ThcLogo } from '@/components/icons';
 import { Badge } from '@/components/ui/badge';
 
 const SectionTitle = ({ children }: { children: React.ReactNode }) => (
@@ -110,7 +110,6 @@ export default function SpecialtiesSection() {
                             <div className="space-y-4">
                                 <h4 className="font-semibold text-center text-lg mb-4 text-premium-yellow">Marcas Asociadas</h4>
                                 <div className="grid grid-cols-2 gap-4">
-                                    <BrandLogo logo={DaherLogo} />
                                     <BrandLogo logo={BogeLogo} />
                                 </div>
                             </div>

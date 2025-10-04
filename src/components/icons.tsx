@@ -19,7 +19,6 @@ export const BilsteinLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="
 export const CorvenLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="CORVEN" {...props} />;
 export const GabrielLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="Gabriel" {...props} />;
 export const SachsLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="SACHS" {...props} />;
-export const DaherLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="DAHER" {...props} />;
 export const BogeLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="BOGE" {...props} />;
 export const EurotecLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="EUROTEC" {...props} />;
 export const MoogLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="MOOG" {...props} />;
@@ -56,3 +55,5 @@ export const WazeLogo = (props: SVGProps<SVGSVGElement>) => (
     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 2.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm0 4.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z" />
   </svg>
 );
+
+export const DaherLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="DAHER" {...props} />;
