@@ -126,7 +126,7 @@ export default function SpecialtiesSection() {
                         <AccordionContent className="pt-4">
                              <div className="grid md:grid-cols-2 gap-8 items-center">
                                 <p className="text-muted-foreground text-justify">Asegure el cumplimiento normativo y la eficiencia de su vehículo con nuestros catalizadores homologados de la marca Gabriel. Fabricados con tecnología de vanguardia, garantizan una reducción óptima de emisiones y un rendimiento excepcional. Adquiera ahora y conduzca con confianza hacia un futuro más limpio. ¡Contáctenos para más información!</p>
-                                <div className="overflow-hidden rounded-lg">
+                                <div className="overflow-hidden rounded-lg w-4/5 mx-auto">
                                     <Image src="/images/productos/catalitico_gabriel.webp" alt="Catalítico Gabriel" width={600} height={400} className="w-full h-full object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
                                 </div>
                             </div>
@@ -178,3 +178,4 @@ export default function SpecialtiesSection() {
     
 
     
+
