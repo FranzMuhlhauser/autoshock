@@ -65,7 +65,7 @@ export default function SpecialtiesSection() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="mt-2">
+                            <div className="mt-2 text-center">
                                 <h4 className="font-semibold text-center text-xl mb-4 text-premium-yellow">Nuestras Marcas Destacadas</h4>
                                 <div className="flex justify-center items-center gap-4">
                                     <Image src="/images/Logos/Bilstein-logo.webp" alt="Bilstein Logo" width={140} height={40} className="object-contain transition-transform duration-300 hover:scale-110" />
@@ -73,6 +73,7 @@ export default function SpecialtiesSection() {
                                     <Image src="/images/Logos/Gabriel_logo.webp" alt="Gabriel Logo" width={140} height={40} className="object-contain transition-transform duration-300 hover:scale-110" />
                                     <Image src="/images/Logos/ibn-logo.webp" alt="IBN Logo" width={140} height={40} className="object-contain transition-transform duration-300 hover:scale-110" />
                                 </div>
+                                <p className="text-muted-foreground mt-4">Y muchas marcas más...</p>
                             </div>
                         </AccordionContent>
                     </AccordionItem>
