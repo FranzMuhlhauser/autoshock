@@ -50,12 +50,9 @@ export default function SpecialtiesSection() {
         const currentTarget = e.currentTarget;
         // Use a timeout to allow the accordion to open/close before scrolling
         setTimeout(() => {
-            // Check if the element is still in the DOM
-            if (document.body.contains(currentTarget)) {
-                const item = currentTarget.closest('[data-radix-collection-item]');
-                if (item && item.getAttribute('data-state') === 'open') {
-                    item.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                }
+            const item = currentTarget.closest('[data-radix-collection-item]');
+            if (item && item.getAttribute('data-state') === 'open') {
+                item.scrollIntoView({ behavior: 'smooth', block: 'center' });
             }
         }, 150); // A short delay is usually enough
     };
@@ -132,9 +129,6 @@ export default function SpecialtiesSection() {
                                 <p className="text-muted-foreground">Asegure el cumplimiento normativo y la eficiencia de su vehículo con nuestros catalizadores homologados de la marca Gabriel. Fabricados con tecnología de vanguardia, garantizan una reducción óptima de emisiones y un rendimiento excepcional. Adquiera ahora y conduzca con confianza hacia un futuro más limpio. ¡Contáctenos para más información!</p>
                             </div>
                              <div className="space-y-4">
-                                <div className="grid grid-cols-2 gap-4">
-                                    <BrandLogo logo={GabrielLogo} />
-                                </div>
                             </div>
                         </AccordionContent>
                     </AccordionItem>
@@ -180,3 +174,5 @@ export default function SpecialtiesSection() {
         </section>
     );
 }
+
+    
