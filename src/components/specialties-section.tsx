@@ -109,18 +109,14 @@ export default function SpecialtiesSection() {
                                 <div className="w-1/2 mx-auto mb-4">
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                                         <div className="overflow-hidden rounded-lg">
-                                            <Image src="/images/productos/amortiguador_daher.webp" alt="Amortiguador Daher" width={600} height={400} className="w-full h-full object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
+                                            <Image src="/images/productos/amortiguador_daher.webp" alt="Amortiguador Daher" width={300} height={200} className="w-full h-full object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
                                         </div>
                                         <div className="overflow-hidden rounded-lg">
-                                            <Image src="/images/productos/pack_amortiguador_daher.webp" alt="Pack amortiguadores Daher" width={600} height={400} className="w-full h-full object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
+                                            <Image src="/images/productos/pack_amortiguador_daher.webp" alt="Pack amortiguadores Daher" width={300} height={200} className="w-full h-full object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
                                         </div>
                                     </div>
                                 </div>
-                                <h4 className="font-semibold text-center text-lg mt-4 text-premium-yellow">Marcas Asociadas</h4>
-                                <div className="flex justify-center gap-4">
-                                     <BrandLogo logo={DaherLogo} />
-                                     <BrandLogo logo={BogeLogo} />
-                                </div>
+                                <h4 className="font-semibold text-center text-xl mt-4 text-premium-yellow">Marcas Asociadas</h4>
                             </div>
                         </AccordionContent>
                     </AccordionItem>
@@ -133,7 +129,7 @@ export default function SpecialtiesSection() {
                                 <p className="text-muted-foreground">Convertidores catalíticos que cumplen con las normativas ambientales, mejorando el rendimiento del motor y reduciendo las emisiones contaminantes.</p>
                             </div>
                              <div className="space-y-4">
-                                <h4 className="font-semibold text-center text-lg mb-4 text-premium-yellow">Marca Asociada</h4>
+                                <h4 className="font-semibold text-center text-xl mb-4 text-premium-yellow">Marca Asociada</h4>
                                 <div className="grid grid-cols-2 gap-4">
                                     <BrandLogo logo={GabrielLogo} />
                                 </div>
@@ -149,7 +145,7 @@ export default function SpecialtiesSection() {
                                 <p className="text-muted-foreground">Soluciones robustas para el transporte pesado. Nuestros amortiguadores para camiones y buses están diseñados para resistir las condiciones más exigentes.</p>
                             </div>
                             <div className="space-y-4">
-                                <h4 className="font-semibold text-center text-lg mb-4 text-premium-yellow">Marcas Asociadas</h4>
+                                <h4 className="font-semibold text-center text-xl mb-4 text-premium-yellow">Marcas Asociadas</h4>
                                 <div className="grid grid-cols-2 gap-4">
                                     <BrandLogo logo={EurotecLogo} />
                                 </div>
