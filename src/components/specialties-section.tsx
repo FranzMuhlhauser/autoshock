@@ -47,12 +47,16 @@ export default function SpecialtiesSection() {
     
     const handleTriggerClick = (e: React.MouseEvent<HTMLButtonElement>) => {
         const currentTarget = e.currentTarget;
+        // Use a timeout to allow the accordion to open/close before scrolling
         setTimeout(() => {
-            const item = currentTarget.closest('[data-radix-collection-item]');
-            if (item && item.getAttribute('data-state') === 'open') {
-                item.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            // Check if the element is still in the DOM
+            if (document.body.contains(currentTarget)) {
+                const item = currentTarget.closest('[data-radix-collection-item]');
+                if (item && item.getAttribute('data-state') === 'open') {
+                    item.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
             }
-        }, 300); // Wait for accordion animation
+        }, 150); // A short delay is usually enough
     };
 
     return (
@@ -100,8 +104,8 @@ export default function SpecialtiesSection() {
                         <AccordionTrigger onClick={handleTriggerClick} className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Amortiguadores de Portalón</AccordionTrigger>
                         <AccordionContent className="grid md:grid-cols-2 gap-8 pt-4">
                              <div>
-                                {images.portalon && <Image src={images.portalon.imageUrl} alt={images.portalon.description} width={600} height={400} className="rounded-lg object-cover mb-4" data-ai-hint={images.portalon.imageHint}/>}
-                                <p className="text-muted-foreground">Optimice la funcionalidad y seguridad de su vehículo con nuestros amortiguadores de portalón de la reconocida marca Daher/Boge, diseñados con precisión y tecnología avanzada. Ofrecen resistencia superior y un cierre suave, ideales para un uso confiable a largo plazo. Adquiera hoy mismo y eleve la experiencia de su maletero. ¡Contáctenos para más detalles!</p>
+                                <p className="text-muted-foreground text-justify mb-4">Optimice la funcionalidad y seguridad de su vehículo con nuestros amortiguadores de portalón de la reconocida marca Daher/Boge, diseñados con precisión y tecnología avanzada. Ofrecen resistencia superior y un cierre suave, ideales para un uso confiable a largo plazo. Adquiera hoy mismo y eleve la experiencia de su maletero. ¡Contáctenos para más detalles!</p>
+                                {images.portalon && <Image src={images.portalon.imageUrl} alt={images.portalon.description} width={600} height={400} className="rounded-lg object-cover" data-ai-hint={images.portalon.imageHint}/>}
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-semibold text-center text-lg mb-4 text-premium-yellow">Marcas Asociadas</h4>
