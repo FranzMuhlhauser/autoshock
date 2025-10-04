@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from 'next/image';
@@ -109,8 +110,8 @@ export default function SpecialtiesSection() {
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-semibold text-center text-lg mb-4 text-premium-yellow">Marcas Asociadas</h4>
-                                <div className="grid grid-cols-2 gap-4">
-                                    <BrandLogo logo={BogeLogo} />
+                                <div>
+                                    
                                 </div>
                             </div>
                         </AccordionContent>
