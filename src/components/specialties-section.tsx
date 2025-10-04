@@ -124,12 +124,10 @@ export default function SpecialtiesSection() {
                     <AccordionItem value="item-3" className="bg-background border-primary/20">
                         <AccordionTrigger onClick={handleTriggerClick} className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Catalíticos</AccordionTrigger>
                         <AccordionContent className="pt-4">
-                             <div className="grid md:grid-cols-2 gap-8 items-center">
+                             <div className="grid md:grid-cols-1 gap-8 items-center">
                                 <div>
                                     <p className="text-muted-foreground mb-4">Asegure el cumplimiento normativo y la eficiencia de su vehículo con nuestros catalizadores homologados de la marca Gabriel. Fabricados con tecnología de vanguardia, garantizan una reducción óptima de emisiones y un rendimiento excepcional. Adquiera ahora y conduzca con confianza hacia un futuro más limpio. ¡Contáctenos para más información!</p>
                                     {images.cataliticos && <Image src={images.cataliticos.imageUrl} alt={images.cataliticos.description} width={600} height={400} className="rounded-lg object-cover" data-ai-hint={images.cataliticos.imageHint} />}
-                                </div>
-                                <div className="flex justify-center">
                                 </div>
                             </div>
                         </AccordionContent>
@@ -176,3 +174,5 @@ export default function SpecialtiesSection() {
         </section>
     );
 }
+
+    
