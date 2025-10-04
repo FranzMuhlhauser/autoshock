@@ -104,7 +104,7 @@ export default function SpecialtiesSection() {
                     <AccordionItem value="item-2" className="bg-background border-primary/20">
                         <AccordionTrigger onClick={handleTriggerClick} className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Amortiguadores de Portalón</AccordionTrigger>
                         <AccordionContent className="pt-4">
-                             <div className="space-y-4">
+                            <div className="space-y-4">
                                 <p className="text-muted-foreground text-justify mb-4">Optimice la funcionalidad y seguridad de su vehículo con nuestros amortiguadores de portalón de la reconocida marca Daher/Boge, diseñados con precisión y tecnología avanzada. Ofrecen resistencia superior y un cierre suave, ideales para un uso confiable a largo plazo. Adquiera hoy mismo y eleve la experiencia de su maletero. ¡Contáctenos para más detalles!</p>
                                 <div className="w-1/2 mx-auto mb-4">
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
@@ -129,7 +129,7 @@ export default function SpecialtiesSection() {
                         <AccordionContent className="grid md:grid-cols-2 gap-8 pt-4">
                             <div>
                                 {images.cataliticos && <Image src={images.cataliticos.imageUrl} alt={images.cataliticos.description} width={600} height={400} className="rounded-lg object-cover mb-4" data-ai-hint={images.cataliticos.imageHint} />}
-                                <p className="text-muted-foreground">Convertidores catalíticos que cumplen con las normativas ambientales, mejorando el rendimiento del motor y reduciendo las emisiones contaminantes.</p>
+                                <p className="text-muted-foreground">Asegure el cumplimiento normativo y la eficiencia de su vehículo con nuestros catalizadores homologados de la marca Gabriel. Fabricados con tecnología de vanguardia, garantizan una reducción óptima de emisiones y un rendimiento excepcional. Adquiera ahora y conduzca con confianza hacia un futuro más limpio. ¡Contáctenos para más información!</p>
                             </div>
                              <div className="space-y-4">
                                 <h4 className="font-semibold text-center text-xl mb-4 text-premium-yellow">Marca Asociada</h4>
@@ -172,6 +172,7 @@ export default function SpecialtiesSection() {
                                 <div className="grid grid-cols-2 gap-4">
                                     <BrandLogo logo={MoogLogo} />
                                     <BrandLogo logo={ThcLogo} />
+                                d_iva_logo/>
                                 </div>
                             </div>
                         </AccordionContent>
@@ -181,7 +182,3 @@ export default function SpecialtiesSection() {
         </section>
     );
 }
-
-    
-
-    
