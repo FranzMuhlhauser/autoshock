@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from 'next/image';
@@ -47,8 +46,9 @@ export default function SpecialtiesSection() {
     };
     
     const handleTriggerClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+        const currentTarget = e.currentTarget;
         setTimeout(() => {
-            const item = e.currentTarget.closest('[data-radix-collection-item]');
+            const item = currentTarget.closest('[data-radix-collection-item]');
             if (item && item.getAttribute('data-state') === 'open') {
                 item.scrollIntoView({ behavior: 'smooth', block: 'center' });
             }
@@ -170,5 +170,3 @@ export default function SpecialtiesSection() {
         </section>
     );
 }
-
-    
