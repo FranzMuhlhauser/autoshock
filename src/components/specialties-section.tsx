@@ -67,7 +67,7 @@ export default function SpecialtiesSection() {
                             </div>
                             <div className="mt-2">
                                 <h4 className="font-semibold text-center text-lg mb-4 text-premium-yellow">Nuestras Marcas Destacadas</h4>
-                                <div className="grid grid-cols-4 md:grid-cols-7 gap-4">
+                                <div className="flex justify-center items-center gap-4">
                                     <Image src="/images/Logos/Bilstein-logo.webp" alt="Bilstein Logo" width={140} height={40} className="object-contain" />
                                     <Image src="/images/Logos/corven-logo.webp" alt="Corven Logo" width={140} height={40} className="object-contain" />
                                     <Image src="/images/Logos/Gabriel_logo.webp" alt="Gabriel Logo" width={140} height={40} className="object-contain" />
