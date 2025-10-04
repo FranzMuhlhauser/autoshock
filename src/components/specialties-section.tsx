@@ -55,7 +55,7 @@ export default function SpecialtiesSection() {
                         <AccordionTrigger className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Amortiguadores para Vehículos Livianos</AccordionTrigger>
                         <AccordionContent className="pt-4">
                              <p className="text-muted-foreground text-justify mb-6">Eleve la seguridad y el confort de su vehículo con nuestra exclusiva selección de amortiguadores para vehículos livianos de alta performance, respaldados por las prestigiosas marcas Bilstein, Corven, Gabriel, IBN, KYB, Monroe y Strada. Diseñados con tecnología de punta, garantizamos durabilidad excepcional y un manejo superior. Adquiera ahora y experimente la diferencia en cada viaje. ¡Contáctenos hoy para una consulta personalizada!</p>
-                             <div className="w-1/2 mx-auto mb-4">
+                             <div className="w-2/3 mx-auto mb-4">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                                     <div className="overflow-hidden rounded-lg">
                                         <Image src="/images/productos/amortiguadores_gabriel.webp" alt="Amortiguadores Gabriel" width={600} height={400} className="w-full h-full object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:brightness-110 -rotate-6" />
@@ -65,8 +65,8 @@ export default function SpecialtiesSection() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="mt-4">
-                                <h4 className="font-semibold text-center text-lg mb-4">Marcas Asociadas</h4>
+                            <div className="mt-2">
+                                <h4 className="font-semibold text-center text-lg mb-4 text-primary">Nuestras Marcas Destacadas</h4>
                                 <div className="grid grid-cols-4 md:grid-cols-8 gap-4">
                                     <BrandLogo logo={BilsteinLogo} />
                                     <BrandLogo logo={CorvenLogo} />
