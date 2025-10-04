@@ -76,9 +76,9 @@ export default function SpecialtiesSection() {
                                 </div>
                                 <p className="text-muted-foreground mt-4 text-lg">Y muchas marcas más...</p>
                                 <div className="flex justify-center items-center gap-4 mt-4">
-                                    <Badge variant="secondary" className="px-4 py-2 text-sm">KYB</Badge>
-                                    <Badge variant="secondary" className="px-4 py-2 text-sm">Monroe</Badge>
-                                    <Badge variant="secondary" className="px-4 py-2 text-sm">Strada</Badge>
+                                    <Badge variant="secondary" className="px-4 py-2 text-sm transition-all hover:text-premium-yellow hover:shadow-[0_0_15px_hsl(var(--primary))]">KYB</Badge>
+                                    <Badge variant="secondary" className="px-4 py-2 text-sm transition-all hover:text-premium-yellow hover:shadow-[0_0_15px_hsl(var(--primary))]">Monroe</Badge>
+                                    <Badge variant="secondary" className="px-4 py-2 text-sm transition-all hover:text-premium-yellow hover:shadow-[0_0_15px_hsl(var(--primary))]">Strada</Badge>
                                 </div>
                             </div>
                         </AccordionContent>
