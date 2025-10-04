@@ -4,7 +4,7 @@
 import Image from 'next/image';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { BogeLogo, CorvenLogo, EurotecLogo, GabrielLogo, IBNLogo, KYBLogo, MoogLogo, MonroeLogo, SachsLogo, StradaLogo, ThcLogo } from '@/components/icons';
+import { BogeLogo, CorvenLogo, EurotecLogo, GabrielLogo, IBNLogo, KYBLogo, MoogLogo, MonroeLogo, SachsLogo, StradaLogo, ThcLogo, DaherLogo } from '@/components/icons';
 import { Badge } from '@/components/ui/badge';
 
 const SectionTitle = ({ children }: { children: React.ReactNode }) => (
@@ -124,12 +124,7 @@ export default function SpecialtiesSection() {
                     <AccordionItem value="item-3" className="bg-background border-primary/20">
                         <AccordionTrigger onClick={handleTriggerClick} className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Catalíticos</AccordionTrigger>
                         <AccordionContent className="pt-4">
-                             <div className="grid md:grid-cols-1 gap-8 items-center">
-                                <div>
-                                    <p className="text-muted-foreground mb-4">Asegure el cumplimiento normativo y la eficiencia de su vehículo con nuestros catalizadores homologados de la marca Gabriel. Fabricados con tecnología de vanguardia, garantizan una reducción óptima de emisiones y un rendimiento excepcional. Adquiera ahora y conduzca con confianza hacia un futuro más limpio. ¡Contáctenos para más información!</p>
-                                    {images.cataliticos && <Image src={images.cataliticos.imageUrl} alt={images.cataliticos.description} width={600} height={400} className="rounded-lg object-cover" data-ai-hint={images.cataliticos.imageHint} />}
-                                </div>
-                            </div>
+                            <p className="text-muted-foreground mb-4">Asegure el cumplimiento normativo y la eficiencia de su vehículo con nuestros catalizadores homologados de la marca Gabriel. Fabricados con tecnología de vanguardia, garantizan una reducción óptima de emisiones y un rendimiento excepcional. Adquiera ahora y conduzca con confianza hacia un futuro más limpio. ¡Contáctenos para más información!</p>
                         </AccordionContent>
                     </AccordionItem>
 
@@ -174,5 +169,7 @@ export default function SpecialtiesSection() {
         </section>
     );
 }
+
+    
 
     
