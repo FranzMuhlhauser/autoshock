@@ -1,3 +1,6 @@
+
+"use client";
+
 import Image from 'next/image';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
@@ -42,6 +45,15 @@ export default function SpecialtiesSection() {
         camiones: PlaceHolderImages.find(p => p.id === 'specialty-camiones'),
         trenDelantero: PlaceHolderImages.find(p => p.id === 'tren-delantero-main'),
     };
+    
+    const handleTriggerClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+        setTimeout(() => {
+            const item = e.currentTarget.closest('[data-radix-collection-item]');
+            if (item && item.getAttribute('data-state') === 'open') {
+                item.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }, 300); // Wait for accordion animation
+    };
 
     return (
         <section id="especialidades" className="py-20 md:py-32 bg-card">
@@ -53,7 +65,7 @@ export default function SpecialtiesSection() {
                 <Accordion type="single" collapsible defaultValue="item-1" className="w-full max-w-4xl mx-auto space-y-4">
                     
                     <AccordionItem value="item-1" className="bg-background border-primary/20">
-                        <AccordionTrigger className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Amortiguadores para Vehículos Livianos</AccordionTrigger>
+                        <AccordionTrigger onClick={handleTriggerClick} className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Amortiguadores para Vehículos Livianos</AccordionTrigger>
                         <AccordionContent className="pt-4">
                              <p className="text-muted-foreground text-justify mb-6">Eleve la seguridad y el confort de su vehículo con nuestra exclusiva selección de amortiguadores para vehículos livianos de alta performance, respaldados por las prestigiosas marcas Bilstein, Corven, Gabriel, IBN, KYB, Monroe y Strada. Diseñados con tecnología de punta, garantizamos durabilidad excepcional y un manejo superior. Adquiera ahora y experimente la diferencia en cada viaje. ¡Contáctenos hoy para una consulta personalizada!</p>
                              <div className="w-2/3 mx-auto mb-4">
@@ -85,7 +97,7 @@ export default function SpecialtiesSection() {
                     </AccordionItem>
 
                     <AccordionItem value="item-2" className="bg-background border-primary/20">
-                        <AccordionTrigger className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Amortiguadores de Portalón</AccordionTrigger>
+                        <AccordionTrigger onClick={handleTriggerClick} className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Amortiguadores de Portalón</AccordionTrigger>
                         <AccordionContent className="grid md:grid-cols-2 gap-8 pt-4">
                              <div>
                                 {images.portalon && <Image src={images.portalon.imageUrl} alt={images.portalon.description} width={600} height={400} className="rounded-lg object-cover mb-4" data-ai-hint={images.portalon.imageHint}/>}
@@ -102,7 +114,7 @@ export default function SpecialtiesSection() {
                     </AccordionItem>
                     
                     <AccordionItem value="item-3" className="bg-background border-primary/20">
-                        <AccordionTrigger className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Catalíticos</AccordionTrigger>
+                        <AccordionTrigger onClick={handleTriggerClick} className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Catalíticos</AccordionTrigger>
                         <AccordionContent className="grid md:grid-cols-2 gap-8 pt-4">
                             <div>
                                 {images.cataliticos && <Image src={images.cataliticos.imageUrl} alt={images.cataliticos.description} width={600} height={400} className="rounded-lg object-cover mb-4" data-ai-hint={images.cataliticos.imageHint} />}
@@ -118,7 +130,7 @@ export default function SpecialtiesSection() {
                     </AccordionItem>
 
                     <AccordionItem value="item-4" className="bg-background border-primary/20">
-                        <AccordionTrigger className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Amortiguadores para Camiones y Autobuses</AccordionTrigger>
+                        <AccordionTrigger onClick={handleTriggerClick} className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Amortiguadores para Camiones y Autobuses</AccordionTrigger>
                         <AccordionContent className="grid md:grid-cols-2 gap-8 pt-4">
                             <div>
                                 {images.camiones && <Image src={images.camiones.imageUrl} alt={images.camiones.description} width={600} height={400} className="rounded-lg object-cover mb-4" data-ai-hint={images.camiones.imageHint} />}
@@ -134,7 +146,7 @@ export default function SpecialtiesSection() {
                     </AccordionItem>
 
                     <AccordionItem value="item-5" className="bg-background border-primary/20">
-                        <AccordionTrigger className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Tren Delantero</AccordionTrigger>
+                        <AccordionTrigger onClick={handleTriggerClick} className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Tren Delantero</AccordionTrigger>
                         <AccordionContent className="grid md:grid-cols-2 gap-8 pt-4">
                             <div>
                                 <h4 className="font-semibold mb-4">Componentes</h4>
@@ -158,3 +170,5 @@ export default function SpecialtiesSection() {
         </section>
     );
 }
+
+    
