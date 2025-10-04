@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { BilsteinLogo, BogeLogo, CorvenLogo, DaherLogo, EurotecLogo, GabrielLogo, IBNLogo, KYBLogo, MoogLogo, MonroeLogo, SachsLogo, StradaLogo, ThcLogo } from '@/components/icons';
+import { Badge } from '@/components/ui/badge';
 
 const SectionTitle = ({ children }: { children: React.ReactNode }) => (
     <h2 className="font-headline text-3xl md:text-4xl font-bold text-center mb-4">{children}</h2>
@@ -74,6 +75,11 @@ export default function SpecialtiesSection() {
                                     <Image src="/images/Logos/ibn-logo.webp" alt="IBN Logo" width={140} height={40} className="object-contain transition-transform duration-300 hover:scale-110" />
                                 </div>
                                 <p className="text-muted-foreground mt-4 text-lg">Y muchas marcas más...</p>
+                                <div className="flex justify-center items-center gap-4 mt-4">
+                                    <Badge variant="secondary" className="px-4 py-2 text-sm">KYB</Badge>
+                                    <Badge variant="secondary" className="px-4 py-2 text-sm">Monroe</Badge>
+                                    <Badge variant="secondary" className="px-4 py-2 text-sm">Strada</Badge>
+                                </div>
                             </div>
                         </AccordionContent>
                     </AccordionItem>
