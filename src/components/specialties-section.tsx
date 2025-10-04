@@ -118,7 +118,7 @@ export default function SpecialtiesSection() {
                                 </div>
                                 <h4 className="font-semibold text-center text-xl mt-4 text-premium-yellow">Marcas Asociadas</h4>
                                 <div className="mt-4 flex justify-center">
-                                     <Image src="/images/Logos/logo_daher.webp" alt="Daher Logo" width={140} height={40} className="object-contain transition-transform duration-300 hover:scale-110" />
+                                     <Image src="/images/Logos/logo_daher.webp" alt="Daher Logo" width={180} height={50} className="object-contain transition-transform duration-300 hover:scale-110" />
                                 </div>
                             </div>
                         </AccordionContent>
@@ -181,5 +181,7 @@ export default function SpecialtiesSection() {
         </section>
     );
 }
+
+    
 
     
