@@ -109,10 +109,10 @@ export default function SpecialtiesSection() {
                                 <div className="w-1/2 mx-auto mb-4">
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                                         <div className="overflow-hidden rounded-lg">
-                                            <Image src="/images/productos/amortiguador_daher.webp" alt="Amortiguador Daher" width={300} height={200} className="w-full h-full object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
+                                            <Image src="/images/productos/amortiguador_daher.webp" alt="Amortiguador Daher" width={300} height={200} className="w-full h-full object-cover rounded-lg transition-all duration-300 hover:scale-105 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
                                         </div>
                                         <div className="overflow-hidden rounded-lg">
-                                            <Image src="/images/productos/pack_amortiguador_daher.webp" alt="Pack amortiguadores Daher" width={300} height={200} className="w-full h-full object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
+                                            <Image src="/images/productos/pack_amortiguador_daher.webp" alt="Pack amortiguadores Daher" width={300} height={200} className="w-full h-full object-cover rounded-lg transition-all duration-300 hover:scale-105 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
                                         </div>
                                     </div>
                                 </div>
