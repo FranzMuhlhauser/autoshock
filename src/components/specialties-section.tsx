@@ -141,9 +141,7 @@ export default function SpecialtiesSection() {
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-semibold text-center text-xl mb-4 text-premium-yellow">Marcas Asociadas</h4>
-                                <div className="grid grid-cols-2 gap-4">
-                                    <BrandLogo logo={EurotecLogo} />
-                                </div>
+                                
                             </div>
                         </AccordionContent>
                     </AccordionItem>
@@ -177,6 +175,7 @@ export default function SpecialtiesSection() {
     
 
     
+
 
 
 
