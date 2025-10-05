@@ -150,7 +150,7 @@ export default function SpecialtiesSection() {
                                     </div>
                                 </div>
                                 <div className="flex justify-center items-center">
-                                    <Image src="/images/productos/amortiguador_camion.webp" alt="Amortiguador de camión" width={100} height={100} className="h-auto w-1/2 object-contain rounded-lg transition-transform duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
+                                    <Image src="/images/productos/amortiguador_camion.webp" alt="Amortiguador de camión" width={100} height={100} className="h-auto w-1/4 object-contain rounded-lg transition-transform duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
                                 </div>
                             </div>
                         </AccordionContent>
@@ -181,4 +181,3 @@ export default function SpecialtiesSection() {
         </section>
     );
 }
-
