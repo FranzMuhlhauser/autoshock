@@ -81,7 +81,7 @@ export default function SpecialtiesSection() {
                                 </div>
                             </div>
                             <div className="mt-2 text-center">
-                                <h4 className="font-semibold text-center text-xl mb-4 text-premium-yellow">Nuestras Marcas Destacadas</h4>
+                                <h4 className="font-semibold text-center text-xl mb-4 text-premium-yellow">Marcas Especializadas</h4>
                                 <div className="flex justify-center items-center gap-4">
                                     <Image src="/images/Logos/Bilstein-logo.webp" alt="Bilstein Logo" width={140} height={40} className="object-contain transition-transform duration-300 hover:scale-110" />
                                     <Image src="/images/Logos/corven-logo.webp" alt="Corven Logo" width={140} height={40} className="object-contain transition-transform duration-300 hover:scale-110" />
@@ -125,7 +125,7 @@ export default function SpecialtiesSection() {
                         <AccordionContent className="pt-4">
                              <div className="grid md:grid-cols-2 gap-8 items-center">
                                 <p className="text-muted-foreground text-justify">Asegure el cumplimiento normativo y la eficiencia de su vehículo con nuestros catalizadores homologados de la marca Gabriel. Fabricados con tecnología de vanguardia, garantizan una reducción óptima de emisiones y un rendimiento excepcional. Adquiera ahora y conduzca con confianza hacia un futuro más limpio. ¡Contáctenos para más información!</p>
-                                <div className="overflow-hidden rounded-lg w-3/5 mx-auto">
+                                <div className="overflow-hidden rounded-lg w-2/5 mx-auto">
                                     <Image src="/images/productos/catalitico_gabriel.webp" alt="Catalítico Gabriel" width={250} height={250} className="w-full h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
                                 </div>
                             </div>
@@ -136,11 +136,16 @@ export default function SpecialtiesSection() {
                         <AccordionTrigger onClick={handleTriggerClick} className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Amortiguadores para Camiones y Autobuses</AccordionTrigger>
                         <AccordionContent className="pt-4">
                             <div className="grid md:grid-cols-2 gap-8 items-center">
-                                <div className="space-y-4">
-                                    <p className="text-muted-foreground text-justify">Repuestos especiales para vehículos de carga y transporte, diseñados para resistir el uso intensivo. Nuestros amortiguadores para camiones y autobuses ofrecen la durabilidad y resistencia necesarias para el transporte comercial y de pasajeros. Garantizamos productos de alta calidad que soportan las exigencias del trabajo pesado.</p>
+                                <p className="text-muted-foreground text-justify">Repuestos especiales para vehículos de carga y transporte, diseñados para resistir el uso intensivo. Nuestros amortiguadores para camiones y autobuses ofrecen la durabilidad y resistencia necesarias para el transporte comercial y de pasajeros. Garantizamos productos de alta calidad que soportan las exigencias del trabajo pesado.</p>
+                                <div className="space-y-4 flex justify-center items-center">
+                                    <Image src="/images/productos/amortiguador_camion.webp" alt="Amortiguador de camión" width={100} height={100} className="rounded-lg object-contain transition-transform duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
                                 </div>
-                                <div className="space-y-4 flex justify-center">
-                                    <Image src="/images/productos/amortiguador_camion.webp" alt="Amortiguador de camión" width={150} height={150} className="rounded-lg object-contain transition-transform duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
+                            </div>
+                            <div className="mt-6 text-center">
+                                 <h4 className="font-semibold text-center text-xl mb-4 text-premium-yellow">Marcas Asociadas</h4>
+                                <div className="grid grid-cols-2 gap-4 max-w-sm mx-auto">
+                                    <BrandLogo logo={SachsLogo} />
+                                    <BrandLogo logo={BogeLogo} />
                                 </div>
                             </div>
                         </AccordionContent>
