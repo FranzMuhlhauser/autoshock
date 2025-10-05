@@ -126,10 +126,10 @@ export default function SpecialtiesSection() {
                     <AccordionItem value="item-3" className="bg-background border-primary/20">
                         <AccordionTrigger onClick={handleTriggerClick} className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Catalíticos</AccordionTrigger>
                         <AccordionContent className="pt-4">
-                             <div className="grid md:grid-cols-2 gap-8 items-center">
+                            <div className="grid md:grid-cols-2 gap-8 items-center">
                                 <p className="text-muted-foreground text-justify">Asegure el cumplimiento normativo y la eficiencia de su vehículo con nuestros catalizadores homologados de la marca Gabriel. Fabricados con tecnología de vanguardia, garantizan una reducción óptima de emisiones y un rendimiento excepcional. Adquiera ahora y conduzca con confianza hacia un futuro más limpio. ¡Contáctenos para más información!</p>
                                 <div className="overflow-hidden rounded-lg w-full flex justify-center items-center">
-                                    <Image src="/images/productos/catalitico_gabriel.webp" alt="Catalítico Gabriel" width={150} height={150} className="h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
+                                    <Image src="/images/productos/catalitico_gabriel.webp" alt="Catalítico Gabriel" width={100} height={100} className="h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
                                 </div>
                             </div>
                         </AccordionContent>
@@ -141,10 +141,17 @@ export default function SpecialtiesSection() {
                             <div className="grid md:grid-cols-2 gap-8 items-center">
                                 <p className="text-muted-foreground text-justify">Repuestos especiales para vehículos de carga y transporte, diseñados para resistir el uso intensivo. Nuestros amortiguadores para camiones y autobuses ofrecen la durabilidad y resistencia necesarias para el transporte comercial y de pasajeros. Garantizamos productos de alta calidad que soportan las exigencias del trabajo pesado.</p>
                                 <div className="overflow-hidden rounded-lg w-full flex justify-center items-center">
-                                    <Image src="/images/productos/amortiguador_camion.webp" alt="Amortiguador de camión" width={120} height={120} className="h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
+                                    <Image src="/images/productos/amortiguador_camion.webp" alt="Amortiguador de camión" width={80} height={80} className="h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
                                 </div>
                             </div>
                             <h4 className="font-semibold text-center text-xl mt-6 mb-4 text-premium-yellow">Marcas Especializadas</h4>
+                            <div className="mt-4 flex justify-center items-center gap-4 flex-wrap">
+                                <Image src="/images/Logos/eurotec_logo.webp" alt="Eurotec Logo" width={140} height={40} className="object-contain transition-transform duration-300 hover:scale-110" />
+                                <Image src="/images/Logos/Gabriel_logo.webp" alt="Gabriel Logo" width={140} height={40} className="object-contain transition-transform duration-300 hover:scale-110" />
+                                <Image src="/images/Logos/sachs_logo.webp" alt="Sachs Logo" width={140} height={40} className="object-contain transition-transform duration-300 hover:scale-110" />
+                                <Image src="/images/Logos/monroe_logo.webp" alt="Monroe Logo" width={140} height={40} className="object-contain transition-transform duration-300 hover:scale-110" />
+                                <Image src="/images/Logos/prt_logo_resultado.webp" alt="PRT Logo" width={140} height={40} className="object-contain transition-transform duration-300 hover:scale-110" />
+                            </div>
                         </AccordionContent>
                     </AccordionItem>
 
