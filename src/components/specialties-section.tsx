@@ -70,7 +70,7 @@ export default function SpecialtiesSection() {
                         <AccordionTrigger onClick={handleTriggerClick} className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Amortiguadores para Vehículos Livianos</AccordionTrigger>
                         <AccordionContent className="pt-4">
                              <p className="text-muted-foreground text-justify mb-6">Eleve la seguridad y el confort de su vehículo con nuestra exclusiva selección de amortiguadores para vehículos livianos de alta performance, respaldados por las prestigiosas marcas Bilstein, Corven, Gabriel, IBN, KYB, Monroe y Strada. Diseñados con tecnología de punta, garantizamos durabilidad excepcional y un manejo superior. Adquiera ahora y experimente la diferencia en cada viaje. ¡Contáctenos hoy para una consulta personalizada!</p>
-                             <div className="w-2/3 mx-auto mb-4">
+                             <div className="w-full mx-auto mb-4">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                                     <div className="overflow-hidden rounded-lg">
                                         <Image src="/images/productos/amortiguadores_gabriel.webp" alt="Amortiguadores Gabriel" width={600} height={400} className="w-full h-full object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:brightness-110 -rotate-6 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.4))]" />
@@ -80,8 +80,9 @@ export default function SpecialtiesSection() {
                                     </div>
                                 </div>
                             </div>
+                            <h4 className="font-semibold text-center text-xl mb-4 text-premium-yellow">Marcas Especializadas</h4>
                             <div className="mt-2 text-center">
-                                <h4 className="font-semibold text-center text-xl mb-4 text-premium-yellow">Marcas Especializadas</h4>
+                                
                                 <div className="flex justify-center items-center gap-4">
                                     <Image src="/images/Logos/Bilstein-logo.webp" alt="Bilstein Logo" width={140} height={40} className="object-contain transition-transform duration-300 hover:scale-110" />
                                     <Image src="/images/Logos/corven-logo.webp" alt="Corven Logo" width={140} height={40} className="object-contain transition-transform duration-300 hover:scale-110" />
@@ -136,16 +137,20 @@ export default function SpecialtiesSection() {
                         <AccordionTrigger onClick={handleTriggerClick} className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Amortiguadores para Camiones y Autobuses</AccordionTrigger>
                         <AccordionContent className="pt-4">
                             <div className="grid md:grid-cols-2 gap-8 items-center">
-                                <p className="text-muted-foreground text-justify">Repuestos especiales para vehículos de carga y transporte, diseñados para resistir el uso intensivo. Nuestros amortiguadores para camiones y autobuses ofrecen la durabilidad y resistencia necesarias para el transporte comercial y de pasajeros. Garantizamos productos de alta calidad que soportan las exigencias del trabajo pesado.</p>
-                                <div className="space-y-4 flex justify-center items-center">
-                                    <Image src="/images/productos/amortiguador_camion.webp" alt="Amortiguador de camión" width={100} height={100} className="rounded-lg object-contain transition-transform duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
+                                <div>
+                                    <p className="text-muted-foreground text-justify mb-6">Repuestos especiales para vehículos de carga y transporte, diseñados para resistir el uso intensivo. Nuestros amortiguadores para camiones y autobuses ofrecen la durabilidad y resistencia necesarias para el transporte comercial y de pasajeros. Garantizamos productos de alta calidad que soportan las exigencias del trabajo pesado.</p>
+                                    <div className="mt-6 text-center">
+                                        <h4 className="font-semibold text-center text-xl mb-4 text-premium-yellow">Marcas Asociadas</h4>
+                                        <div className="grid grid-cols-2 gap-4 max-w-sm mx-auto">
+                                            <BrandLogo logo={SachsLogo} />
+                                            <BrandLogo logo={BogeLogo} />
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="mt-6 text-center">
-                                 <h4 className="font-semibold text-center text-xl mb-4 text-premium-yellow">Marcas Asociadas</h4>
-                                <div className="grid grid-cols-2 gap-4 max-w-sm mx-auto">
-                                    <BrandLogo logo={SachsLogo} />
-                                    <BrandLogo logo={BogeLogo} />
+                                <div className="flex justify-center items-center">
+                                    <div className="w-2/3">
+                                        <Image src="/images/productos/amortiguador_camion.webp" alt="Amortiguador de camión" width={300} height={300} className="w-full h-auto rounded-lg object-contain transition-transform duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
+                                    </div>
                                 </div>
                             </div>
                         </AccordionContent>
