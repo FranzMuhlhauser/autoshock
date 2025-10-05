@@ -73,14 +73,14 @@ export default function SpecialtiesSection() {
                              <div className="w-full mx-auto mb-4">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                                     <div className="flex justify-center overflow-hidden rounded-lg">
-                                        <Image src="/images/productos/amortiguadores_gabriel.webp" alt="Amortiguadores Gabriel" width={200} height={133} className="w-4/5 h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:brightness-110 -rotate-6 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.4))]" />
+                                        <Image src="/images/productos/amortiguadores_gabriel.webp" alt="Amortiguadores Gabriel" width={150} height={100} className="w-1/2 h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:brightness-110 -rotate-6 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.4))]" />
                                     </div>
                                     <div className="flex justify-center overflow-hidden rounded-lg">
-                                        <Image src="/images/productos/amortiguador_kyb.webp" alt="Amortiguador KYB" width={200} height={133} className="w-4/5 h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:brightness-110 rotate-6 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.4))]" />
+                                        <Image src="/images/productos/amortiguador_kyb.webp" alt="Amortiguador KYB" width={150} height={100} className="w-1/2 h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:brightness-110 rotate-6 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.4))]" />
                                     </div>
                                 </div>
                             </div>
-                            <h4 className="font-semibold text-center text-xl mb-4 text-premium-yellow">Marcas Especializadas</h4>
+                            <h4 className="font-semibold text-center text-xl mt-6 mb-4 text-premium-yellow">Marcas Especializadas</h4>
                             <div className="mt-2 text-center">
                                 
                                 <div className="flex justify-center items-center gap-4">
@@ -137,10 +137,10 @@ export default function SpecialtiesSection() {
                         <AccordionTrigger onClick={handleTriggerClick} className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Amortiguadores para Camiones y Autobuses</AccordionTrigger>
                         <AccordionContent className="pt-4">
                             <div className="grid md:grid-cols-2 gap-8 items-center">
-                                <div>
+                                <div className="flex flex-col justify-center">
                                     <p className="text-muted-foreground text-justify mb-6">Repuestos especiales para vehículos de carga y transporte, diseñados para resistir el uso intensivo. Nuestros amortiguadores para camiones y autobuses ofrecen la durabilidad y resistencia necesarias para el transporte comercial y de pasajeros. Garantizamos productos de alta calidad que soportan las exigencias del trabajo pesado.</p>
                                     <div className="mt-6 text-center">
-                                        <h4 className="font-semibold text-center text-xl mb-4 text-premium-yellow">Marcas Asociadas</h4>
+                                        <h4 className="font-semibold text-xl mb-4 text-premium-yellow">Marcas Asociadas</h4>
                                         <div className="grid grid-cols-2 gap-4 max-w-sm mx-auto">
                                             <BrandLogo logo={SachsLogo} />
                                             <BrandLogo logo={BogeLogo} />
@@ -181,5 +181,7 @@ export default function SpecialtiesSection() {
         </section>
     );
 }
+
+    
 
     
