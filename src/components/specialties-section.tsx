@@ -73,10 +73,10 @@ export default function SpecialtiesSection() {
                              <div className="w-full mx-auto mb-4">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                                     <div className="flex justify-center overflow-hidden rounded-lg">
-                                        <Image src="/images/productos/amortiguadores_gabriel.webp" alt="Amortiguadores Gabriel" width={150} height={100} className="w-1/2 h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:brightness-110 -rotate-6 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.4))]" />
+                                        <Image src="/images/productos/amortiguadores_gabriel.webp" alt="Amortiguadores Gabriel" width={100} height={67} className="w-1/2 h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:brightness-110 -rotate-6 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.4))]" />
                                     </div>
                                     <div className="flex justify-center overflow-hidden rounded-lg">
-                                        <Image src="/images/productos/amortiguador_kyb.webp" alt="Amortiguador KYB" width={150} height={100} className="w-1/2 h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:brightness-110 rotate-6 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.4))]" />
+                                        <Image src="/images/productos/amortiguador_kyb.webp" alt="Amortiguador KYB" width={100} height={67} className="w-1/2 h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:brightness-110 rotate-6 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.4))]" />
                                     </div>
                                 </div>
                             </div>
@@ -126,7 +126,7 @@ export default function SpecialtiesSection() {
                         <AccordionContent className="pt-4">
                              <div className="grid md:grid-cols-2 gap-8 items-center">
                                 <p className="text-muted-foreground text-justify">Asegure el cumplimiento normativo y la eficiencia de su vehículo con nuestros catalizadores homologados de la marca Gabriel. Fabricados con tecnología de vanguardia, garantizan una reducción óptima de emisiones y un rendimiento excepcional. Adquiera ahora y conduzca con confianza hacia un futuro más limpio. ¡Contáctenos para más información!</p>
-                                <div className="overflow-hidden rounded-lg w-1/4 mx-auto">
+                                <div className="overflow-hidden rounded-lg w-2/3 mx-auto">
                                     <Image src="/images/productos/catalitico_gabriel.webp" alt="Catalítico Gabriel" width={250} height={250} className="w-full h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
                                 </div>
                             </div>
