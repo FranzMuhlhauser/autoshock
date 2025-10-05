@@ -73,10 +73,10 @@ export default function SpecialtiesSection() {
                              <div className="w-full mx-auto mb-4">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                                     <div className="overflow-hidden rounded-lg">
-                                        <Image src="/images/productos/amortiguadores_gabriel.webp" alt="Amortiguadores Gabriel" width={600} height={400} className="w-full h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:brightness-110 -rotate-6 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.4))]" />
+                                        <Image src="/images/productos/amortiguadores_gabriel.webp" alt="Amortiguadores Gabriel" width={300} height={200} className="w-full h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:brightness-110 -rotate-6 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.4))]" />
                                     </div>
                                     <div className="overflow-hidden rounded-lg">
-                                        <Image src="/images/productos/amortiguador_kyb.webp" alt="Amortiguador KYB" width={600} height={400} className="w-full h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:brightness-110 rotate-6 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.4))]" />
+                                        <Image src="/images/productos/amortiguador_kyb.webp" alt="Amortiguador KYB" width={300} height={200} className="w-full h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:brightness-110 rotate-6 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.4))]" />
                                     </div>
                                 </div>
                             </div>
