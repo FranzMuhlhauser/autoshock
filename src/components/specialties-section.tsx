@@ -71,13 +71,13 @@ export default function SpecialtiesSection() {
                         <AccordionTrigger onClick={handleTriggerClick} className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Amortiguadores para Vehículos Livianos</AccordionTrigger>
                         <AccordionContent className="pt-4">
                              <p className="text-muted-foreground text-justify mb-6">Eleve la seguridad y el confort de su vehículo con nuestra exclusiva selección de amortiguadores para vehículos livianos de alta performance, respaldados por las prestigiosas marcas Bilstein, Corven, Gabriel, IBN, KYB, Monroe y Strada. Diseñados con tecnología de punta, garantizamos durabilidad excepcional y un manejo superior. Adquiera ahora y experimente la diferencia en cada viaje. ¡Contáctenos hoy para una consulta personalizada!</p>
-                             <div className="w-full mx-auto mb-4">
+                            <div className="w-full mx-auto mb-4">
                                 <div className="flex justify-center gap-4 items-center">
                                     <div className="w-1/4 overflow-hidden rounded-lg">
-                                        <Image src="/images/productos/amortiguadores_gabriel.webp" alt="Amortiguadores Gabriel" width={120} height={80} className="w-full h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:brightness-110 -rotate-6 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.4))]" />
+                                        <Image src="/images/productos/amortiguadores_gabriel.webp" alt="Amortiguadores Gabriel" width={240} height={160} className="w-full h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:brightness-110 -rotate-6 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.4))]" />
                                     </div>
                                     <div className="w-1/4 overflow-hidden rounded-lg">
-                                        <Image src="/images/productos/amortiguador_kyb.webp" alt="Amortiguador KYB" width={120} height={80} className="w-full h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:brightness-110 rotate-6 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.4))]" />
+                                        <Image src="/images/productos/amortiguador_kyb.webp" alt="Amortiguador KYB" width={240} height={160} className="w-full h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:brightness-110 rotate-6 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.4))]" />
                                     </div>
                                 </div>
                             </div>
