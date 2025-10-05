@@ -131,7 +131,7 @@ export default function SpecialtiesSection() {
                                     <p className="text-muted-foreground text-justify">Asegure el cumplimiento normativo y la eficiencia de su vehículo con nuestros catalizadores homologados de la marca Gabriel. Fabricados con tecnología de vanguardia, garantizan una reducción óptima de emisiones y un rendimiento excepcional. Adquiera ahora y conduzca con confianza hacia un futuro más limpio. ¡Contáctenos para más información!</p>
                                 </div>
                                 <div className="overflow-hidden rounded-lg w-full flex justify-center items-center">
-                                    <Image src="/images/productos/catalitico_gabriel.webp" alt="Catalítico Gabriel" width={400} height={400} className="w-full h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
+                                    <Image src="/images/productos/catalitico_gabriel.webp" alt="Catalítico Gabriel" width={400} height={400} className="w-1/2 h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
                                 </div>
                             </div>
                         </AccordionContent>
@@ -143,15 +143,15 @@ export default function SpecialtiesSection() {
                             <div className="grid md:grid-cols-2 gap-8 items-center">
                                 <div>
                                     <p className="text-muted-foreground text-justify">Repuestos especiales para vehículos de carga y transporte, diseñados para resistir el uso intensivo. Nuestros amortiguadores para camiones y autobuses ofrecen la durabilidad y resistencia necesarias para el transporte comercial y de pasajeros. Garantizamos productos de alta calidad que soportan las exigencias del trabajo pesado.</p>
-                                    <h4 className="font-semibold text-center text-xl mt-6 mb-4 text-premium-yellow">Marcas Asociadas</h4>
-                                    <div className="grid grid-cols-2 gap-4 max-w-sm mx-auto">
-                                        <BrandLogo logo={SachsLogo} />
-                                        <BrandLogo logo={BogeLogo} />
-                                    </div>
                                 </div>
                                 <div className="flex justify-center items-center">
                                     <Image src="/images/productos/amortiguador_camion.webp" alt="Amortiguador de camión" width={150} height={150} className="h-auto w-1/2 object-contain rounded-lg transition-transform duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
                                 </div>
+                            </div>
+                             <h4 className="font-semibold text-center text-xl mt-6 mb-4 text-premium-yellow">Marcas Asociadas</h4>
+                            <div className="grid grid-cols-2 gap-4 max-w-sm mx-auto">
+                                <BrandLogo logo={SachsLogo} />
+                                <BrandLogo logo={BogeLogo} />
                             </div>
                         </AccordionContent>
                     </AccordionItem>
@@ -181,3 +181,5 @@ export default function SpecialtiesSection() {
         </section>
     );
 }
+
+    
