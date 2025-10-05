@@ -4,7 +4,7 @@
 import Image from 'next/image';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { BogeLogo, CorvenLogo, EurotecLogo, GabrielLogo, IBNLogo, KYBLogo, MoogLogo, MonroeLogo, SachsLogo, StradaLogo, ThcLogo, DaherLogo } from '@/components/icons';
+import { BogeLogo, CorvenLogo, GabrielLogo, IBNLogo, KYBLogo, MoogLogo, MonroeLogo, SachsLogo, StradaLogo, ThcLogo, DaherLogo } from '@/components/icons';
 import { Badge } from '@/components/ui/badge';
 
 const SectionTitle = ({ children }: { children: React.ReactNode }) => (
