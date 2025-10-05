@@ -140,15 +140,17 @@ export default function SpecialtiesSection() {
                     <AccordionItem value="item-4" className="bg-background border-primary/20">
                         <AccordionTrigger onClick={handleTriggerClick} className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Amortiguadores para Camiones y Autobuses</AccordionTrigger>
                         <AccordionContent className="pt-4">
-                            <div className="flex flex-col items-center text-center">
-                                <p className="text-muted-foreground mb-6 max-w-2xl">Repuestos especiales para vehículos de carga y transporte, diseñados para resistir el uso intensivo. Nuestros amortiguadores para camiones y autobuses ofrecen la durabilidad y resistencia necesarias para el transporte comercial y de pasajeros. Garantizamos productos de alta calidad que soportan las exigencias del trabajo pesado.</p>
-                                <div className="w-1/6 mb-4">
-                                    <Image src="/images/productos/amortiguador_camion.webp" alt="Amortiguador de camión" width={100} height={100} className="w-full h-auto rounded-lg object-contain transition-transform duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
+                            <div className="grid md:grid-cols-2 gap-8 items-center">
+                                <div>
+                                    <p className="text-muted-foreground text-justify">Repuestos especiales para vehículos de carga y transporte, diseñados para resistir el uso intensivo. Nuestros amortiguadores para camiones y autobuses ofrecen la durabilidad y resistencia necesarias para el transporte comercial y de pasajeros. Garantizamos productos de alta calidad que soportan las exigencias del trabajo pesado.</p>
+                                    <h4 className="font-semibold text-center text-xl mt-6 mb-4 text-premium-yellow">Marcas Asociadas</h4>
+                                    <div className="grid grid-cols-2 gap-4 max-w-sm mx-auto">
+                                        <BrandLogo logo={SachsLogo} />
+                                        <BrandLogo logo={BogeLogo} />
+                                    </div>
                                 </div>
-                                <h4 className="font-semibold text-xl mb-4 text-premium-yellow">Marcas Asociadas</h4>
-                                <div className="grid grid-cols-2 gap-4 max-w-sm mx-auto">
-                                    <BrandLogo logo={SachsLogo} />
-                                    <BrandLogo logo={BogeLogo} />
+                                <div className="flex justify-center items-center">
+                                    <Image src="/images/productos/amortiguador_camion.webp" alt="Amortiguador de camión" width={100} height={100} className="h-auto w-1/2 object-contain rounded-lg transition-transform duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
                                 </div>
                             </div>
                         </AccordionContent>
@@ -179,3 +181,4 @@ export default function SpecialtiesSection() {
         </section>
     );
 }
+
