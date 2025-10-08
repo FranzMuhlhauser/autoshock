@@ -163,7 +163,7 @@ export default function SpecialtiesSection() {
                             <div className="grid md:grid-cols-2 gap-8 items-center">
                                 <p className="text-muted-foreground text-justify">Repuestos especiales para vehículos de carga y transporte, diseñados para resistir el uso intensivo. Nuestros amortiguadores para camiones y autobuses ofrecen la durabilidad y resistencia necesarias para el transporte comercial y de pasajeros. Garantizamos productos de alta calidad que soportan las exigencias del trabajo pesado.</p>
                                 <div className="overflow-hidden rounded-lg w-full flex justify-center items-center">
-                                    <Image src="/images/productos/amortiguador_camion.webp" alt="Amortiguador de camión" width={320} height={320} className="w-48 h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
+                                    <Image src="/images/productos/amortiguador_camion.webp" alt="Amortiguador de camión" width={200} height={200} className="h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
                                 </div>
                             </div>
                            <h4 className="font-semibold text-center text-xl mt-6 mb-4 text-premium-yellow">Marcas Especializadas</h4>
@@ -193,6 +193,7 @@ export default function SpecialtiesSection() {
                                     />
                                 ))}
                             </div>
+                            <h4 className="font-semibold text-center text-xl mt-6 mb-4 text-premium-yellow">Nuestras Marcas Especializadas</h4>
                         </AccordionContent>
                     </AccordionItem>
                 </Accordion>
