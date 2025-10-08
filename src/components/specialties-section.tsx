@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from 'next/image';
@@ -127,7 +128,7 @@ export default function SpecialtiesSection() {
                            <div className="grid md:grid-cols-2 gap-8 items-center">
                                 <p className="text-muted-foreground text-justify">Asegure el cumplimiento normativo y la eficiencia de su vehículo con nuestros catalizadores homologados de la marca Gabriel. Fabricados con tecnología de vanguardia, garantizan una reducción óptima de emisiones y un rendimiento excepcional. Adquiera ahora y conduzca con confianza hacia un futuro más limpio. ¡Contáctenos para más información!</p>
                                 <div className="overflow-hidden rounded-lg w-full flex justify-center items-center">
-                                    <Image src="/images/productos/catalitico_gabriel.webp" alt="Catalítico Gabriel" width={240} height={240} className="h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
+                                    <Image src="/images/productos/catalitico_gabriel.webp" alt="Catalítico Gabriel" width={280} height={280} className="h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
                                 </div>
                             </div>
                         </AccordionContent>
@@ -139,7 +140,7 @@ export default function SpecialtiesSection() {
                             <div className="grid md:grid-cols-2 gap-8 items-center">
                                 <p className="text-muted-foreground text-justify">Repuestos especiales para vehículos de carga y transporte, diseñados para resistir el uso intensivo. Nuestros amortiguadores para camiones y autobuses ofrecen la durabilidad y resistencia necesarias para el transporte comercial y de pasajeros. Garantizamos productos de alta calidad que soportan las exigencias del trabajo pesado.</p>
                                 <div className="overflow-hidden rounded-lg w-full flex justify-center items-center">
-                                    <Image src="/images/productos/amortiguador_camion.webp" alt="Amortiguador de camión" width={240} height={240} className="h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
+                                    <Image src="/images/productos/amortiguador_camion.webp" alt="Amortiguador de camión" width={280} height={280} className="h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
                                 </div>
                             </div>
                            <h4 className="font-semibold text-center text-xl mt-6 mb-4 text-premium-yellow">Marcas Especializadas</h4>
@@ -157,11 +158,6 @@ export default function SpecialtiesSection() {
                         <AccordionTrigger onClick={handleTriggerClick} className="text-left text-lg font-semibold hover:text-premium-yellow transition-colors duration-300">Tren Delantero</AccordionTrigger>
                         <AccordionContent className="pt-4">
                             <p className="text-muted-foreground text-justify mb-6">Componentes Esenciales para el Sistema de Dirección y Suspensión Delantera Descubra nuestra completa gama de repuestos de alta calidad, diseñados para garantizar la estabilidad, seguridad y máximo confort de su vehículo. Cada pieza está elaborada con tecnología avanzada para optimizar el rendimiento y prolongar la vida útil de su sistema. ¡Adquiera ahora y conduzca con total confianza! Contáctenos para más detalles.</p>
-                            <div className="grid md:grid-cols-2 gap-8">
-                                <div className="space-y-4">
-                                    {images.trenDelantero && <Image src={images.trenDelantero.imageUrl} alt={images.trenDelantero.description} width={600} height={400} className="rounded-lg object-cover mb-4" data-ai-hint={images.trenDelantero.imageHint}/>}
-                                </div>
-                            </div>
                              <h4 className="font-semibold text-center text-lg mb-4 text-premium-yellow">Marcas Especializadas</h4>
                             <div className="grid grid-cols-2 gap-4">
                                 <BrandLogo logo={MoogLogo} />
@@ -174,3 +170,4 @@ export default function SpecialtiesSection() {
         </section>
     );
 }
+
