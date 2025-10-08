@@ -51,7 +51,7 @@ const ProductCard = ({ title, description, imgSrc, isHelpCard = false }: { title
 
 
 const trenDelanteroProducts = [
-    { title: 'Axiales', description: 'Conexión directa', imgSrc: '/images/productos_tren_delantero/Axiales.webp' },
+    { title: 'Axiales', description: 'Conexión directa', imgSrc: '/images/productos_tren_delantero/axiales.webp' },
     { title: 'Bandejas', description: 'Soporte estructural', imgSrc: '/images/productos_tren_delantero/bandejas.webp' },
     { title: 'Bieletas', description: 'Estabilización', imgSrc: '/images/productos_tren_delantero/bieleta.webp' },
     { title: 'Cazoletas', description: 'Amortiguación', imgSrc: '/images/productos_tren_delantero/cazoletas.webp' },
