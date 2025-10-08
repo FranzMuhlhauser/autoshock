@@ -6,6 +6,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { MoogLogo, ThcLogo, BogeLogo, SachsLogo, DaherLogo } from '@/components/icons';
 import { Badge } from '@/components/ui/badge';
+import Link from 'next/link';
 
 const SectionTitle = ({ children }: { children: React.ReactNode }) => (
     <h2 className="font-headline text-3xl md:text-4xl font-bold text-center mb-4">{children}</h2>
@@ -36,6 +37,49 @@ const trenDelanteroSubProducts = [
     { id: 'sub-bieletas', name: 'Bieletas' },
     { id: 'sub-rotulas', name: 'Rótulas' },
     { id: 'sub-terminales', name: 'Terminales' },
+];
+
+const ProductCard = ({ title, description, imgSrc, isHelpCard = false }: { title: string, description: string, imgSrc?: string, isHelpCard?: boolean }) => {
+  if (isHelpCard) {
+    return (
+      <Link href="#contacto" className="group flex flex-col justify-center items-center text-center p-6 bg-yellow-900/20 border border-yellow-700/50 rounded-lg transition-all hover:bg-yellow-900/30 hover:border-yellow-700">
+          <h3 className="font-headline text-xl text-premium-yellow font-bold mb-2 group-hover:text-white transition-colors">¿Necesita ayuda?</h3>
+          <p className="text-muted-foreground group-hover:text-gray-300 transition-colors">Consulte con nuestros expertos</p>
+      </Link>
+    )
+  }
+
+  return (
+    <div className="group flex flex-col p-4 border border-border/50 rounded-lg bg-background/50 hover:border-primary/50 transition-all text-center">
+      <div className="flex-grow">
+        <h3 className="font-headline text-xl text-premium-yellow font-bold mb-1">{title}</h3>
+        <p className="text-sm text-muted-foreground">{description}</p>
+      </div>
+      {imgSrc && (
+        <div className="mt-4 h-24 flex items-end justify-center overflow-hidden">
+          <Image
+            src={imgSrc}
+            alt={title}
+            width={120}
+            height={90}
+            className="object-contain h-full w-auto transition-transform duration-300 group-hover:scale-110"
+          />
+        </div>
+      )}
+    </div>
+  );
+};
+
+
+const trenDelanteroProducts = [
+    { title: 'Axiales', description: 'Conexión directa', imgSrc: '/images/productos_tren_delantero/Axiales.webp' },
+    { title: 'Bandejas', description: 'Soporte estructural', imgSrc: '/images/productos_tren_delantero/Bandejas.webp' },
+    { title: 'Bieletas', description: 'Estabilización', imgSrc: '/images/productos_tren_delantero/Bieletas.webp' },
+    { title: 'Cazoletas', description: 'Amortiguación', imgSrc: '/images/productos_tren_delantero/Cazoletas.webp' },
+    { title: 'Espirales', description: 'Suspensión', imgSrc: '/images/productos_tren_delantero/Espirales.webp' },
+    { title: 'Rótulas', description: 'Articulación', imgSrc: '/images/productos_tren_delantero/Rotulas.webp' },
+    { title: 'Terminales', description: 'Conexión final', imgSrc: '/images/productos_tren_delantero/Terminales.webp' },
+    { title: '¿Necesita ayuda?', description: 'Consulte con nuestros expertos', isHelpCard: true }
 ];
 
 export default function SpecialtiesSection() {
@@ -128,7 +172,7 @@ export default function SpecialtiesSection() {
                            <div className="grid md:grid-cols-2 gap-8 items-center">
                                 <p className="text-muted-foreground text-justify">Asegure el cumplimiento normativo y la eficiencia de su vehículo con nuestros catalizadores homologados de la marca Gabriel. Fabricados con tecnología de vanguardia, garantizan una reducción óptima de emisiones y un rendimiento excepcional. Adquiera ahora y conduzca con confianza hacia un futuro más limpio. ¡Contáctenos para más información!</p>
                                 <div className="overflow-hidden rounded-lg w-full flex justify-center items-center">
-                                    <Image src="/images/productos/catalitico_gabriel.webp" alt="Catalítico Gabriel" width={300} height={300} className="h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
+                                    <Image src="/images/productos/catalitico_gabriel.webp" alt="Catalítico Gabriel" width={320} height={320} className="h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
                                 </div>
                             </div>
                         </AccordionContent>
@@ -140,7 +184,7 @@ export default function SpecialtiesSection() {
                             <div className="grid md:grid-cols-2 gap-8 items-center">
                                 <p className="text-muted-foreground text-justify">Repuestos especiales para vehículos de carga y transporte, diseñados para resistir el uso intensivo. Nuestros amortiguadores para camiones y autobuses ofrecen la durabilidad y resistencia necesarias para el transporte comercial y de pasajeros. Garantizamos productos de alta calidad que soportan las exigencias del trabajo pesado.</p>
                                 <div className="overflow-hidden rounded-lg w-full flex justify-center items-center">
-                                    <Image src="/images/productos/amortiguador_camion.webp" alt="Amortiguador de camión" width={300} height={300} className="h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
+                                    <Image src="/images/productos/amortiguador_camion.webp" alt="Amortiguador de camión" width={320} height={320} className="h-auto object-cover rounded-lg transition-all duration-300 hover:scale-110 hover:[filter:drop-shadow(0_0_10px_rgba(255,215,0,0.2))]" />
                                 </div>
                             </div>
                            <h4 className="font-semibold text-center text-xl mt-6 mb-4 text-premium-yellow">Marcas Especializadas</h4>
@@ -159,6 +203,17 @@ export default function SpecialtiesSection() {
                         <AccordionContent className="pt-4">
                             <p className="text-muted-foreground text-justify mb-6">Componentes Esenciales para el Sistema de Dirección y Suspensión Delantera Descubra nuestra completa gama de repuestos de alta calidad, diseñados para garantizar la estabilidad, seguridad y máximo confort de su vehículo. Cada pieza está elaborada con tecnología avanzada para optimizar el rendimiento y prolongar la vida útil de su sistema. ¡Adquiera ahora y conduzca con total confianza! Contáctenos para más detalles.</p>
                             <h4 className="font-semibold text-center text-xl mt-6 mb-4 text-premium-yellow">Nuestros Productos Especializados</h4>
+                             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+                                {trenDelanteroProducts.map((product) => (
+                                    <ProductCard 
+                                        key={product.title} 
+                                        title={product.title} 
+                                        description={product.description} 
+                                        imgSrc={product.imgSrc}
+                                        isHelpCard={product.isHelpCard}
+                                    />
+                                ))}
+                            </div>
                              <h4 className="font-semibold text-center text-xl mt-6 mb-4 text-premium-yellow">Marcas Especializadas</h4>
                             <div className="grid grid-cols-2 gap-4">
                                 <BrandLogo logo={MoogLogo} />
@@ -171,5 +226,3 @@ export default function SpecialtiesSection() {
         </section>
     );
 }
-
-    
