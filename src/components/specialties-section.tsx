@@ -202,12 +202,12 @@ export default function SpecialtiesSection() {
                                 </div>
                                 <p className="text-muted-foreground mt-8 text-lg">Y muchas marcas más...</p>
                                 <div className="flex justify-center items-center gap-3 mt-4 flex-wrap">
-                                    <span className="more-brand-badge px-4 py-2 bg-premium-white/5 border border-premium-white/10 rounded-full text-premium-white text-sm font-medium transition-all duration-300 hover:bg-premium-white/10">Dongnam</span>
-                                    <span className="more-brand-badge px-4 py-2 bg-premium-white/5 border border-premium-white/10 rounded-full text-premium-white text-sm font-medium transition-all duration-300 hover:bg-premium-white/10">Mitsumaru</span>
-                                    <span className="more-brand-badge px-4 py-2 bg-premium-white/5 border border-premium-white/10 rounded-full text-premium-white text-sm font-medium transition-all duration-300 hover:bg-premium-white/10">PRS Turquia</span>
-                                    <span className="more-brand-badge px-4 py-2 bg-premium-white/5 border border-premium-white/10 rounded-full text-premium-white text-sm font-medium transition-all duration-300 hover:bg-premium-white/10">Sidem</span>
-                                    <span className="more-brand-badge px-4 py-2 bg-premium-white/5 border border-premium-white/10 rounded-full text-premium-white text-sm font-medium transition-all duration-300 hover:bg-premium-white/10">SUS - Q Korea</span>
-                                    <span className="more-brand-badge px-4 py-2 bg-premium-white/5 border border-premium-white/10 rounded-full text-premium-white text-sm font-medium transition-all duration-300 hover:bg-premium-white/10">Yulim</span>
+                                    <span className="more-brand-badge px-4 py-2 bg-premium-white/5 border border-premium-white/10 rounded-full text-premium-white text-sm font-medium transition-all duration-300 hover:bg-premium-white/20 hover:text-premium-yellow">Dongnam</span>
+                                    <span className="more-brand-badge px-4 py-2 bg-premium-white/5 border border-premium-white/10 rounded-full text-premium-white text-sm font-medium transition-all duration-300 hover:bg-premium-white/20 hover:text-premium-yellow">Mitsumaru</span>
+                                    <span className="more-brand-badge px-4 py-2 bg-premium-white/5 border border-premium-white/10 rounded-full text-premium-white text-sm font-medium transition-all duration-300 hover:bg-premium-white/20 hover:text-premium-yellow">PRS Turquia</span>
+                                    <span className="more-brand-badge px-4 py-2 bg-premium-white/5 border border-premium-white/10 rounded-full text-premium-white text-sm font-medium transition-all duration-300 hover:bg-premium-white/20 hover:text-premium-yellow">Sidem</span>
+                                    <span className="more-brand-badge px-4 py-2 bg-premium-white/5 border border-premium-white/10 rounded-full text-premium-white text-sm font-medium transition-all duration-300 hover:bg-premium-white/20 hover:text-premium-yellow">SUS - Q Korea</span>
+                                    <span className="more-brand-badge px-4 py-2 bg-premium-white/5 border border-premium-white/10 rounded-full text-premium-white text-sm font-medium transition-all duration-300 hover:bg-premium-white/20 hover:text-premium-yellow">Yulim</span>
                                 </div>
                             </div>
                         </AccordionContent>
