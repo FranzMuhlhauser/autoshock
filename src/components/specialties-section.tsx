@@ -18,27 +18,6 @@ const BrandLogo = ({ logo: Logo }: { logo: React.ElementType }) => (
     </div>
 );
 
-const SubProductCard = ({ id, name }: { id: string, name: string }) => {
-    const image = PlaceHolderImages.find(p => p.id === id);
-    return (
-        <div className="group relative overflow-hidden rounded-lg bg-card">
-            {image && (
-                 <Image src={image.imageUrl} alt={image.description} width={300} height={200} className="w-full h-32 object-cover transition-transform group-hover:scale-110" data-ai-hint={image.imageHint} />
-            )}
-            <div className="absolute inset-0 bg-black/50"></div>
-            <p className="absolute bottom-2 left-2 font-semibold text-white">{name}</p>
-        </div>
-    );
-}
-
-const trenDelanteroSubProducts = [
-    { id: 'sub-axiales', name: 'Axiales' },
-    { id: 'sub-bandejas', name: 'Bandejas' },
-    { id: 'sub-bieletas', name: 'Bieletas' },
-    { id: 'sub-rotulas', name: 'Rótulas' },
-    { id: 'sub-terminales', name: 'Terminales' },
-];
-
 const ProductCard = ({ title, description, imgSrc, isHelpCard = false }: { title: string, description: string, imgSrc?: string, isHelpCard?: boolean }) => {
   if (isHelpCard) {
     return (
@@ -73,12 +52,12 @@ const ProductCard = ({ title, description, imgSrc, isHelpCard = false }: { title
 
 const trenDelanteroProducts = [
     { title: 'Axiales', description: 'Conexión directa', imgSrc: '/images/productos_tren_delantero/Axiales.webp' },
-    { title: 'Bandejas', description: 'Soporte estructural', imgSrc: '/images/productos_tren_delantero/Bandejas.webp' },
-    { title: 'Bieletas', description: 'Estabilización', imgSrc: '/images/productos_tren_delantero/Bieletas.webp' },
-    { title: 'Cazoletas', description: 'Amortiguación', imgSrc: '/images/productos_tren_delantero/Cazoletas.webp' },
-    { title: 'Espirales', description: 'Suspensión', imgSrc: '/images/productos_tren_delantero/Espirales.webp' },
-    { title: 'Rótulas', description: 'Articulación', imgSrc: '/images/productos_tren_delantero/Rotulas.webp' },
-    { title: 'Terminales', description: 'Conexión final', imgSrc: '/images/productos_tren_delantero/Terminales.webp' },
+    { title: 'Bandejas', description: 'Soporte estructural', imgSrc: '/images/productos_tren_delantero/bandejas.webp' },
+    { title: 'Bieletas', description: 'Estabilización', imgSrc: '/images/productos_tren_delantero/bieleta.webp' },
+    { title: 'Cazoletas', description: 'Amortiguación', imgSrc: '/images/productos_tren_delantero/cazoletas.webp' },
+    { title: 'Espirales', description: 'Suspensión', imgSrc: '/images/productos_tren_delantero/espirales.webp' },
+    { title: 'Rótulas', description: 'Articulación', imgSrc: '/images/productos_tren_delantero/rotulas.webp' },
+    { title: 'Terminales', description: 'Conexión final', imgSrc: '/images/productos_tren_delantero/terminales.webp' },
     { title: '¿Necesita ayuda?', description: 'Consulte con nuestros expertos', isHelpCard: true }
 ];
 
