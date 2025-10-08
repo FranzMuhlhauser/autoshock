@@ -202,12 +202,12 @@ export default function SpecialtiesSection() {
                                 </div>
                                 <p className="text-muted-foreground mt-8 text-lg">Y muchas marcas más...</p>
                                 <div className="flex justify-center items-center gap-3 mt-4 flex-wrap">
-                                    <span className="more-brand-badge px-4 py-2 bg-premium-white/5 border border-premium-white/10 rounded-full text-premium-white text-sm font-medium transition-all duration-300 hover:bg-premium-white/20 hover:text-premium-yellow">Dongnam</span>
-                                    <span className="more-brand-badge px-4 py-2 bg-premium-white/5 border border-premium-white/10 rounded-full text-premium-white text-sm font-medium transition-all duration-300 hover:bg-premium-white/20 hover:text-premium-yellow">Mitsumaru</span>
-                                    <span className="more-brand-badge px-4 py-2 bg-premium-white/5 border border-premium-white/10 rounded-full text-premium-white text-sm font-medium transition-all duration-300 hover:bg-premium-white/20 hover:text-premium-yellow">PRS Turquia</span>
-                                    <span className="more-brand-badge px-4 py-2 bg-premium-white/5 border border-premium-white/10 rounded-full text-premium-white text-sm font-medium transition-all duration-300 hover:bg-premium-white/20 hover:text-premium-yellow">Sidem</span>
-                                    <span className="more-brand-badge px-4 py-2 bg-premium-white/5 border border-premium-white/10 rounded-full text-premium-white text-sm font-medium transition-all duration-300 hover:bg-premium-white/20 hover:text-premium-yellow">SUS - Q Korea</span>
-                                    <span className="more-brand-badge px-4 py-2 bg-premium-white/5 border border-premium-white/10 rounded-full text-premium-white text-sm font-medium transition-all duration-300 hover:bg-premium-white/20 hover:text-premium-yellow">Yulim</span>
+                                    <Badge variant="secondary" className="px-4 py-2 text-sm transition-all hover:text-premium-yellow hover:shadow-[0_0_15px_hsl(var(--primary))]">Dongnam</Badge>
+                                    <Badge variant="secondary" className="px-4 py-2 text-sm transition-all hover:text-premium-yellow hover:shadow-[0_0_15px_hsl(var(--primary))]">Mitsumaru</Badge>
+                                    <Badge variant="secondary" className="px-4 py-2 text-sm transition-all hover:text-premium-yellow hover:shadow-[0_0_15px_hsl(var(--primary))]">PRS Turquia</Badge>
+                                    <Badge variant="secondary" className="px-4 py-2 text-sm transition-all hover:text-premium-yellow hover:shadow-[0_0_15px_hsl(var(--primary))]">Sidem</Badge>
+                                    <Badge variant="secondary" className="px-4 py-2 text-sm transition-all hover:text-premium-yellow hover:shadow-[0_0_15px_hsl(var(--primary))]">SUS - Q Korea</Badge>
+                                    <Badge variant="secondary" className="px-4 py-2 text-sm transition-all hover:text-premium-yellow hover:shadow-[0_0_15px_hsl(var(--primary))]">Yulim</Badge>
                                 </div>
                             </div>
                         </AccordionContent>
