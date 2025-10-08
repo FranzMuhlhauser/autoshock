@@ -193,10 +193,6 @@ export default function SpecialtiesSection() {
                                     />
                                 ))}
                             </div>
-                             <h4 className="font-semibold text-center text-xl mt-6 mb-4 text-premium-yellow">Marcas Especializadas</h4>
-                            <div className="flex justify-center gap-4">
-                                <BrandLogo logo={ThcLogo} />
-                            </div>
                         </AccordionContent>
                     </AccordionItem>
                 </Accordion>
