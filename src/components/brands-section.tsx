@@ -17,7 +17,7 @@ const BrandsList = ({ 'aria-hidden': ariaHidden }: { 'aria-hidden'?: boolean }) 
                     alt={`${brand.name} logo`}
                     width={140}
                     height={40}
-                    className="h-10 w-auto object-contain text-muted-foreground transition-colors hover:text-foreground"
+                    className="h-10 w-auto object-contain grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-400"
                     title={brand.name}
                 />
             </li>
