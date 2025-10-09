@@ -3,7 +3,7 @@ import Image from "next/image";
 const brands = [
     { name: "Bilstein", src: "/images/Logos/Bilstein-logo.webp", width: 150, height: 40 },
     { name: "Corven", src: "/images/Logos/corven-logo.webp", width: 140, height: 50 },
-    { name: "Gabriel", src: "/images/Logos/Gabriel_logo.webp", width: 180, height: 60 },
+    { name: "Gabriel", src: "/images/Logos/Gabriel_logo.webp", width: 200, height: 65 },
     { name: "IBN", src: "/images/Logos/ibn-logo.webp", width: 120, height: 60 },
     { name: "KYB", src: "/images/Logos/kyb-logo.webp", width: 120, height: 50 },
     { name: "Monroe", src: "/images/Logos/monroe_logo.webp", width: 160, height: 40 },
