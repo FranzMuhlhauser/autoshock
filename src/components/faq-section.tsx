@@ -2,16 +2,28 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const faqItems = [
     {
-        question: "¿Qué marcas de amortiguadores manejan?",
-        answer: "Trabajamos con las mejores marcas del mercado: KYB, Monroe, Gabriel, Bilstein, Corven, IBN y Strada. Todas son marcas originales con garantía de fábrica."
+        question: "¿Qué tipos de amortiguadores ofrecen?",
+        answer: "Ofrecemos una amplia gama que incluye amortiguadores hidráulicos, a gas, de portalón, para vehículos livianos, camiones y autobuses, cubriendo las principales marcas y modelos del mercado."
     },
     {
-        question: "¿Cuándo debo cambiar los amortiguadores de mi auto?",
-        answer: "Se recomienda cambiar los amortiguadores cada 80,000-100,000 km o cuando notes rebotes excesivos, ruidos al pasar por baches, o desgaste irregular de neumáticos."
+        question: "¿Cuáles son las señales de que necesito cambiar los amortiguadores?",
+        answer: "Presta atención a rebotes excesivos, ruidos al pasar por baches, desgaste irregular de neumáticos, inestabilidad en curvas o una distancia de frenado más larga. Estos son indicadores clave."
     },
     {
-        question: "¿Tienen repuestos para todas las marcas de autos?",
-        answer: "Sí, tenemos repuestos para Toyota, Honda, Nissan, Chevrolet, Ford, Hyundai, Kia y muchas más marcas. Contamos con un amplio stock de amortiguadores y repuestos de suspensión."
+        question: "¿Realizan envíos a todo Chile?",
+        answer: "Sí, realizamos despachos a todas las regiones del país a través de Starken, Chilexpress y Blue Express, asegurando que tus repuestos lleguen de forma rápida y segura."
+    },
+    {
+        question: "¿Qué garantía tienen los productos?",
+        answer: "Todos nuestros productos cuentan con una garantía de 3 meses por defectos de fabricación. La calidad y tu tranquilidad son nuestra prioridad."
+    },
+    {
+        question: "¿Ofrecen asesoramiento técnico?",
+        answer: "¡Por supuesto! Nuestro equipo de expertos está disponible para brindarte la mejor asesoría técnica y ayudarte a elegir el repuesto exacto que tu vehículo necesita."
+    },
+    {
+        question: "¿Cómo funciona la suspensión de tu vehículo?",
+        answer: "La suspensión conecta las ruedas al chasis y utiliza amortiguadores y espirales para absorber impactos, manteniendo los neumáticos en contacto con el suelo para garantizar estabilidad, control y confort al conducir."
     }
 ];
 
