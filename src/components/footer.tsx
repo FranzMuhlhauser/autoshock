@@ -43,7 +43,7 @@ export default function Footer() {
                         <ul className="space-y-3 text-muted-foreground">
                             <li className="flex items-start gap-2">
                                 <MapPin className="h-4 w-4 mt-1 flex-shrink-0 text-primary/70" />
-                                <span>Av. Ejemplo 123, Santiago, Chile</span>
+                                <span>Avenida Benidorm 1280, Viña del Mar, Chile</span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <Phone className="h-4 w-4 text-primary/70" />

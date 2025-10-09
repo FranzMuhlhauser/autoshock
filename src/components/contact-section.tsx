@@ -142,7 +142,7 @@ export default function ContactSection() {
                         <div>
                             <h3 className="font-headline text-2xl font-bold mb-4">Información de Contacto</h3>
                             <div className="space-y-4">
-                                <InfoItem icon={<MapPin />}>Av. Ejemplo 123, Santiago, Chile</InfoItem>
+                                <InfoItem icon={<MapPin />}>Avenida Benidorm 1280, Viña del Mar, Chile</InfoItem>
                                 <InfoItem icon={<Phone />}><a href="tel:+56212345678" className="hover:text-primary transition-colors">+56 2 1234 5678</a></InfoItem>
                                 <InfoItem icon={<Mail />}><a href="mailto:contacto@autoshock.cl" className="hover:text-primary transition-colors">contacto@autoshock.cl</a></InfoItem>
                                 <InfoItem icon={<Facebook />}><a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Síguenos en Facebook</a></InfoItem>
@@ -150,7 +150,7 @@ export default function ContactSection() {
                         </div>
                         <div className="aspect-video w-full overflow-hidden rounded-lg">
                              <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.233390317377!2d-70.6482680848009!3d-33.44292198077537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a6b5e5b5b5%3A0x6a0d2d6c1b3d7b1!2sPlaza%20de%20Armas%20de%20Santiago!5e0!3m2!1sen!2scl!4v1678886564531!5m2!1sen!2scl"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.187383187163!2d-71.53909102434568!3d-33.01131107355152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689dde184b76a9f%3A0x49e79430132c3246!2sAv.%20Benidorm%201280%2C%20Vi%C3%B1a%20del%20Mar%2C%20Valpara%C3%ADso!5e0!3m2!1sen!2scl!4v1719522197587!5m2!1sen!2scl"
                                 width="100%"
                                 height="100%"
                                 style={{ border: 0 }}
@@ -162,12 +162,12 @@ export default function ContactSection() {
                         </div>
                         <div className="flex gap-4">
                             <Button variant="outline" asChild className="w-full">
-                                <a href="https://maps.app.goo.gl/K5v2YJ6Z7z9X8f7a9" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                                <a href="https://www.google.com/maps/search/?api=1&query=Avenida+Benidorm+1280%2C+Vi%C3%B1a+del+Mar%2C+Chile" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                                     <GoogleMapsLogo className="h-5 w-5" /> Abrir en Google Maps
                                 </a>
                             </Button>
                             <Button variant="accent" asChild className="w-full">
-                                <a href="https://waze.com/ul?ll=-33.442922,-70.648268&navigate=yes" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                                <a href="https://waze.com/ul?ll=-33.0113,-71.5365&navigate=yes" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                                     <WazeLogo className="h-5 w-5" /> Abrir en Waze
                                 </a>
                             </Button>

@@ -9,7 +9,7 @@ const description = "Más de 25 años de experiencia en la venta de repuestos au
 export const metadata: Metadata = {
   title: `${appName} | Calidad Premium que Impulsa tu Camino`,
   description: description,
-  keywords: ['amortiguadores', 'tren delantero', 'repuestos automotrices', 'Auto Shock', 'Chile', 'suspensión'],
+  keywords: ['amortiguadores', 'tren delantero', 'repuestos automotrices', 'Auto Shock', 'Chile', 'suspensión', 'viña del mar'],
   authors: [{ name: appName }],
   creator: appName,
   publisher: appName,
@@ -46,10 +46,10 @@ const jsonLd = {
   description: 'Venta de repuestos automotrices como amortiguadores, trenes delanteros y portalones.',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Av. Ejemplo 123',
-    addressLocality: 'Santiago',
-    addressRegion: 'RM',
-    postalCode: '1234567',
+    streetAddress: 'Avenida Benidorm 1280',
+    addressLocality: 'Viña del Mar',
+    addressRegion: 'Valparaíso',
+    postalCode: '2520000',
     addressCountry: 'CL',
   },
   telephone: '+56212345678',
