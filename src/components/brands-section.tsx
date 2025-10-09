@@ -24,11 +24,14 @@ const BrandsList = ({'aria-hidden': ariaHidden}: {'aria-hidden'?: boolean}) => (
 
 export default function BrandsSection() {
     return (
-        <section id="marcas" className="py-20 md:py-24 bg-card">
+        <section id="marcas" className="py-20 md:py-24 bg-background">
             <div className="container">
-                <h2 className="font-headline text-3xl md:text-4xl font-bold text-center mb-12">
-                    Marcas que Atendemos
+                <h2 className="font-headline text-3xl md:text-4xl font-bold text-center mb-4">
+                    Marcas que <span className="text-premium-yellow">Atendemos</span>
                 </h2>
+                <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12">
+                    Repuestos premium compatibles con las principales marcas automotrices del mercado
+                </p>
                 <div 
                     className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
                 >
