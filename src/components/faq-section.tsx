@@ -30,14 +30,42 @@ export default function FaqSection() {
                     Resolvemos las dudas más comunes sobre amortiguadores y repuestos automotrices
                 </p>
                 <Accordion type="single" collapsible className="w-full max-w-4xl mx-auto space-y-4">
-                    {faqItems.map((item, index) => (
-                        <AccordionItem key={index} value={`item-${index + 1}`} className="bg-card border-border/10">
-                            <AccordionTrigger className="text-left text-lg font-semibold">{item.question}</AccordionTrigger>
-                            <AccordionContent className="text-muted-foreground text-base">
-                                {item.answer}
-                            </AccordionContent>
-                        </AccordionItem>
-                    ))}
+                    <AccordionItem value="item-1" className="bg-card border-border/10">
+                        <AccordionTrigger className="text-left text-lg font-semibold">{faqItems[0].question}</AccordionTrigger>
+                        <AccordionContent className="text-muted-foreground text-base">
+                            {faqItems[0].answer}
+                        </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem value="item-2" className="bg-card border-border/10">
+                        <AccordionTrigger className="text-left text-lg font-semibold">{faqItems[1].question}</AccordionTrigger>
+                        <AccordionContent className="text-muted-foreground text-base">
+                            {faqItems[1].answer}
+                        </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem value="item-3" className="bg-card border-border/10">
+                        <AccordionTrigger className="text-left text-lg font-semibold">{faqItems[2].question}</AccordionTrigger>
+                        <AccordionContent className="text-muted-foreground text-base">
+                            {faqItems[2].answer}
+                        </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem value="item-4" className="bg-card border-border/10">
+                        <AccordionTrigger className="text-left text-lg font-semibold">{faqItems[3].question}</AccordionTrigger>
+                        <AccordionContent className="text-muted-foreground text-base">
+                            {faqItems[3].answer}
+                            <div className="mt-6">
+                                <h4 className="font-semibold text-premium-yellow mb-2">¿Cómo funcionan los sistemas de suspensión y amortiguación de un Vehículo?</h4>
+                                <div className="aspect-video w-full">
+                                    <iframe
+                                        className="w-full h-full rounded-lg"
+                                        src="https://www.youtube.com/embed/j0vhTg82Pz0"
+                                        title="Funcionamientos de la suspención en terreno"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen
+                                    ></iframe>
+                                </div>
+                            </div>
+                        </AccordionContent>
+                    </AccordionItem>
                 </Accordion>
             </div>
         </section>
