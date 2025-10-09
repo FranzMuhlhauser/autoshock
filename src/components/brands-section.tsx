@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import { Badge } from "@/components/ui/badge";
 
 const brands = [
   { name: "Ford", src: "/images/logo_carrusel/fordlogo.webp" },
@@ -10,6 +11,10 @@ const brands = [
   { name: "Chevrolet", src: "/images/logo_carrusel/chevroletlogo.webp" },
 ];
 
+const otherBrands = [
+    'Peugeot', 'Volkswagen', 'Renault', 'Mazda', 'Honda', 'Hyundai', 'Suzuki', 'Subaru'
+];
+
 const BrandsList = ({ 'aria-hidden': ariaHidden }: { 'aria-hidden'?: boolean }) => (
     <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden={ariaHidden}>
         {brands.map((brand, index) => (
@@ -18,10 +23,10 @@ const BrandsList = ({ 'aria-hidden': ariaHidden }: { 'aria-hidden'?: boolean }) 
                     src={brand.src}
                     alt={`${brand.name} logo`}
                     width={160}
-                    height={60}
+                    height={80}
                     className={cn(
                         "w-auto object-contain grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-400 hover:scale-110",
-                        brand.name === "Kia" ? "h-12" : "h-16"
+                        brand.name === "Kia" ? "h-12" : "h-20"
                     )}
                     title={brand.name}
                 />
@@ -47,6 +52,13 @@ export default function BrandsSection() {
                     <BrandsList aria-hidden />
                 </div>
                 <p className="text-center text-muted-foreground mt-8">Y muchas marcas mas...</p>
+                 <div className="flex justify-center flex-wrap gap-3 mt-4">
+                    {otherBrands.map((brand) => (
+                        <Badge key={brand} variant="secondary" className="px-4 py-2 text-sm transition-all hover:text-premium-yellow hover:shadow-[0_0_15px_hsl(var(--primary))]">
+                            {brand}
+                        </Badge>
+                    ))}
+                </div>
             </div>
         </section>
     );
