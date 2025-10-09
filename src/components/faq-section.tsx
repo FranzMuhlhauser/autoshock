@@ -12,6 +12,10 @@ const faqItems = [
     {
         question: "¿Tienen repuestos para todas las marcas de autos?",
         answer: "Sí, tenemos repuestos para Toyota, Honda, Nissan, Chevrolet, Ford, Hyundai, Kia y muchas más marcas. Contamos con un amplio stock de amortiguadores y repuestos de suspensión."
+    },
+    {
+        question: "¿Cómo funciona la suspensión de tu vehículo?",
+        answer: "La suspensión de tu vehículo es un sistema complejo de amortiguadores, resortes y otros componentes que trabajan juntos para absorber los impactos del camino. Mantiene las ruedas en contacto con el suelo, proporcionando estabilidad, control y confort al conducir. Un buen mantenimiento de la suspensión es crucial para tu seguridad."
     }
 ];
 
