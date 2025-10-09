@@ -1,6 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Mail } from "lucide-react";
 
 const brands = [
   { name: "Ford", src: "/images/logo_carrusel/fordlogo.webp" },
@@ -58,6 +61,19 @@ export default function BrandsSection() {
                             {brand}
                         </Badge>
                     ))}
+                </div>
+
+                <div className="max-w-3xl mx-auto mt-20 bg-card/50 p-10 rounded-lg text-center border border-border/20">
+                    <h3 className="font-headline text-3xl font-bold mb-4">¿Tu marca no está en la lista?</h3>
+                    <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
+                        No te preocupes, trabajamos con repuestos para prácticamente todas las marcas del mercado
+                    </p>
+                    <Button asChild size="lg" className="rounded-full bg-premium-yellow text-black hover:bg-premium-yellow-dark">
+                        <Link href="#contacto">
+                            <Mail className="mr-2 h-5 w-5" />
+                            Consulta tu Marca
+                        </Link>
+                    </Button>
                 </div>
             </div>
         </section>
