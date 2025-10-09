@@ -6,6 +6,7 @@ const brands = [
   { name: "Mitsubishi", src: "/images/logo_carrusel/mitsubishi_logo.webp" },
   { name: "Nissan", src: "/images/logo_carrusel/nissanlogo.webp" },
   { name: "Toyota", src: "/images/logo_carrusel/toyotalogo.webp" },
+  { name: "Chevrolet", src: "/images/logo_carrusel/chevroletlogo.webp" },
 ];
 
 const BrandsList = ({ 'aria-hidden': ariaHidden }: { 'aria-hidden'?: boolean }) => (
