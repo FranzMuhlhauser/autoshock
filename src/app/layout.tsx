@@ -52,7 +52,7 @@ const jsonLd = {
     postalCode: '2520000',
     addressCountry: 'CL',
   },
-  telephone: '+56212345678',
+  telephone: '+56986908605',
   email: 'contacto@autoshock.cl',
   url: 'https://auto-shock.example.com', // Replace with actual URL
   image: 'https://picsum.photos/seed/og-image/1200/630',

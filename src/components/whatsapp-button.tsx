@@ -2,7 +2,7 @@ import { WhatsAppIcon } from "@/components/icons";
 
 export default function WhatsAppButton() {
     // Replace with your actual WhatsApp number
-    const phoneNumber = "56912345678";
+    const phoneNumber = "56986908605";
     const message = "Hola, me gustaría hacer una consulta sobre sus productos.";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
