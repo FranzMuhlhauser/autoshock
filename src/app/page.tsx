@@ -16,10 +16,10 @@ export default function Home() {
       <main className="flex-1">
         <HeroSection />
         <SpecialtiesSection />
-        <FaqSection />
         <PremiumBrandsSection />
         <BrandsSection />
         <AboutSection />
+        <FaqSection />
         <ContactSection />
       </main>
       <Footer />
