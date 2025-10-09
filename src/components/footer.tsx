@@ -1,10 +1,11 @@
+
 import Link from 'next/link';
 import { Mail, MapPin, Phone } from 'lucide-react';
 import Image from 'next/image';
 
 const navLinks = [
   { name: 'Inicio', href: '#inicio' },
-  { name: 'Especialidades', href: '#especialidades' },
+  { name: 'Productos', href: '#productos' },
   { name: 'Marcas', href: '#marcas' },
   { name: 'Nosotros', href: '#nosotros' },
   { name: 'Contacto', href: '#contacto' },

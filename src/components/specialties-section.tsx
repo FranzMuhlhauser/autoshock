@@ -81,9 +81,9 @@ export default function SpecialtiesSection() {
     };
 
     return (
-        <section id="especialidades" className="py-20 md:py-32 bg-card">
+        <section id="productos" className="py-20 md:py-32 bg-card">
             <div className="container">
-                <SectionTitle>Nuestras <span className="text-primary">Especialidades</span></SectionTitle>
+                <SectionTitle>Nuestros <span className="text-primary">Productos</span></SectionTitle>
                 <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12">
                     Soluciones automotrices de alta gama, seleccionadas para el máximo rendimiento y durabilidad.
                 </p>

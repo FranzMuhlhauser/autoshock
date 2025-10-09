@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from 'react';
@@ -9,7 +10,7 @@ import Image from 'next/image';
 
 const navLinks = [
   { name: 'Inicio', href: '#inicio' },
-  { name: 'Especialidades', href: '#especialidades' },
+  { name: 'Productos', href: '#productos' },
   { name: 'Marcas', href: '#marcas' },
   { name: 'Nosotros', href: '#nosotros' },
 ];

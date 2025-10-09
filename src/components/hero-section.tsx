@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -33,7 +34,7 @@ export default function HeroSection() {
           Calidad Premium que Impulsa tu Camino
         </p>
         <Button size="lg" asChild className="rounded-full">
-          <Link href="#especialidades">Explorar Productos</Link>
+          <Link href="#productos">Explorar Productos</Link>
         </Button>
 
         <div className="mt-16 text-white">
