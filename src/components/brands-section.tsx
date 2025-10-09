@@ -15,9 +15,9 @@ const BrandsList = ({ 'aria-hidden': ariaHidden }: { 'aria-hidden'?: boolean }) 
                 <Image 
                     src={brand.src}
                     alt={`${brand.name} logo`}
-                    width={140}
-                    height={40}
-                    className="h-10 w-auto object-contain grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-400"
+                    width={160}
+                    height={50}
+                    className="h-12 w-auto object-contain grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-400 hover:scale-110"
                     title={brand.name}
                 />
             </li>
