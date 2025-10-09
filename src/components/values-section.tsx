@@ -43,7 +43,7 @@ const values = [
 
 export default function ValuesSection() {
     return (
-        <section id="valores" className="py-20 md:py-32 bg-card">
+        <section id="valores" className="pt-10 md:pt-16 pb-20 md:pb-32 bg-card">
             <div className="container">
                 <h2 className="font-headline text-3xl md:text-4xl font-bold text-center mb-4">
                     Nuestros <span className="text-premium-yellow">Valores</span>
