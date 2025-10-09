@@ -64,6 +64,18 @@ export default function FaqSection() {
                                     ></iframe>
                                 </div>
                             </div>
+                            <div className="mt-4">
+                                <h4 className="font-semibold text-premium-yellow mb-2">Aprende a identificar las piezas de la suspensión en tu vehículo</h4>
+                                <div className="aspect-video w-full">
+                                    <iframe
+                                        className="w-full h-full rounded-lg"
+                                        src="https://www.youtube.com/embed/Yocn5L4rOy0"
+                                        title="Aprende a identificar las piezas de la suspensión en tu vehículo"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen
+                                    ></iframe>
+                                </div>
+                            </div>
                         </AccordionContent>
                     </AccordionItem>
                 </Accordion>
