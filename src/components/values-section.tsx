@@ -1,7 +1,7 @@
 import { ShieldCheck, Briefcase, Award, Handshake, Heart, Gem } from "lucide-react";
 
 const ValueCard = ({ icon, title, description }: { icon: React.ReactNode, title: string, description: string }) => (
-    <div className="bg-card p-6 rounded-lg text-center flex flex-col items-center shadow-md transition-transform hover:-translate-y-2">
+    <div className="bg-card p-6 rounded-lg text-center flex flex-col items-center shadow-md transition-all hover:-translate-y-2 hover:shadow-[0_0_20px_hsl(var(--primary)/0.7)] border border-transparent">
         <div className="mb-4 text-premium-yellow">{icon}</div>
         <h3 className="font-headline text-xl font-bold mb-2">{title}</h3>
         <p className="text-muted-foreground text-sm flex-grow">{description}</p>
