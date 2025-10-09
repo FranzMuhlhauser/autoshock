@@ -11,7 +11,7 @@ const brands = [
 
 export default function PremiumBrandsSection() {
     return (
-        <section id="premium-marcas" className="py-20 md:py-24 bg-background">
+        <section id="premium-marcas" className="py-20 md:py-24 bg-card">
             <div className="container text-center">
                 <h2 className="font-headline text-3xl md:text-4xl font-bold mb-4">
                     Marcas <span className="text-premium-yellow">Premium</span>
