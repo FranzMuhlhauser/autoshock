@@ -10,6 +10,8 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '
 import { useToast } from '@/hooks/use-toast';
 import { MapPin, Phone, Mail, Facebook } from 'lucide-react';
 import { GoogleMapsLogo, WazeLogo } from './icons';
+import { sendContactMessage } from '@/ai/flows/contact-flow';
+
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "El nombre debe tener al menos 2 caracteres." }),
@@ -31,30 +33,23 @@ function ContactForm() {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    // Replace with your Formspree endpoint
-    const formspreeEndpoint = "https://formspree.io/f/your_form_id";
-
     try {
-      const response = await fetch(formspreeEndpoint, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(values),
-      });
+      const response = await sendContactMessage(values);
 
-      if (response.ok) {
+      if (response.success) {
         toast({
           title: "Mensaje Enviado",
           description: "Gracias por contactarnos. Te responderemos a la brevedad.",
         });
         form.reset();
       } else {
-        throw new Error("Hubo un problema al enviar el formulario.");
+        throw new Error(response.error || "Hubo un problema al enviar el formulario.");
       }
-    } catch (error) {
+    } catch (error: any) {
       toast({
         variant: "destructive",
         title: "Error",
-        description: "No se pudo enviar el mensaje. Por favor, inténtalo de nuevo.",
+        description: error.message || "No se pudo enviar el mensaje. Por favor, inténtalo de nuevo.",
       });
     }
   }
