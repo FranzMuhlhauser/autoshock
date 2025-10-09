@@ -53,7 +53,7 @@ const jsonLd = {
     addressCountry: 'CL',
   },
   telephone: '+56986908605',
-  email: 'contacto@autoshock.cl',
+  email: 'auto_shock@hotmail.com',
   url: 'https://auto-shock.example.com', // Replace with actual URL
   image: 'https://picsum.photos/seed/og-image/1200/630',
   openingHours: 'Mo-Fr 09:00-18:00',

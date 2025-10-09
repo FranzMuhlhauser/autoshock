@@ -144,7 +144,7 @@ export default function ContactSection() {
                             <div className="space-y-4">
                                 <InfoItem icon={<MapPin />}>Avenida Benidorm 1280, Viña del Mar, Chile</InfoItem>
                                 <InfoItem icon={<Phone />}><a href="tel:+56986908605" className="hover:text-primary transition-colors">+56 9 8690 8605</a></InfoItem>
-                                <InfoItem icon={<Mail />}><a href="mailto:contacto@autoshock.cl" className="hover:text-primary transition-colors">contacto@autoshock.cl</a></InfoItem>
+                                <InfoItem icon={<Mail />}><a href="mailto:auto_shock@hotmail.com" className="hover:text-primary transition-colors">auto_shock@hotmail.com</a></InfoItem>
                                 <InfoItem icon={<Facebook />}><a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Síguenos en Facebook</a></InfoItem>
                             </div>
                         </div>
