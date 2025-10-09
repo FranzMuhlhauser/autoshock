@@ -1,22 +1,25 @@
-import { ChevroletLogo, FordLogo, HyundaiLogo, KiaLogo, MazdaLogo, NissanLogo, SuzukiLogo, ToyotaLogo } from "@/components/icons";
-import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const brands = [
-  { name: "Chevrolet", logo: ChevroletLogo },
-  { name: "Ford", logo: FordLogo },
-  { name: "Toyota", logo: ToyotaLogo },
-  { name: "Nissan", logo: NissanLogo },
-  { name: "Hyundai", logo: HyundaiLogo },
-  { name: "Kia", logo: KiaLogo },
-  { name: "Suzuki", logo: SuzukiLogo },
-  { name: "Mazda", logo: MazdaLogo },
+  { name: "Ford", src: "/images/logo_carrusel/fordlogo.webp" },
+  { name: "Kia", src: "/images/logo_carrusel/kialogo.webp" },
+  { name: "Mitsubishi", src: "/images/logo_carrusel/mitsubishi_logo.webp" },
+  { name: "Nissan", src: "/images/logo_carrusel/nissanlogo.webp" },
+  { name: "Toyota", src: "/images/logo_carrusel/toyotalogo.webp" },
 ];
 
-const BrandsList = ({'aria-hidden': ariaHidden}: {'aria-hidden'?: boolean}) => (
-    <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_svg]:max-w-[140px] animate-infinite-scroll" aria-hidden={ariaHidden}>
+const BrandsList = ({ 'aria-hidden': ariaHidden }: { 'aria-hidden'?: boolean }) => (
+    <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 animate-infinite-scroll" aria-hidden={ariaHidden}>
         {brands.map((brand, index) => (
             <li key={index} className="flex-shrink-0">
-                <brand.logo className="h-10 w-auto text-muted-foreground transition-colors hover:text-foreground" title={brand.name} />
+                <Image 
+                    src={brand.src}
+                    alt={`${brand.name} logo`}
+                    width={140}
+                    height={40}
+                    className="h-10 w-auto object-contain text-muted-foreground transition-colors hover:text-foreground"
+                    title={brand.name}
+                />
             </li>
         ))}
     </ul>

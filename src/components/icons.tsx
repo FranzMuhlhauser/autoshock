@@ -27,15 +27,7 @@ export const IBNLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="IBN" 
 export const KYBLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="KYB" {...props} />;
 export const MonroeLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="MONROE" {...props} />;
 export const StradaLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="STRADA" {...props} />;
-
-export const ChevroletLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="Chevrolet" {...props} />;
-export const FordLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="Ford" {...props} />;
-export const ToyotaLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="TOYOTA" {...props} />;
-export const NissanLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="NISSAN" {...props} />;
-export const HyundaiLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="HYUNDAI" {...props} />;
-export const KiaLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="KIA" {...props} />;
-export const SuzukiLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="SUZUKI" {...props} />;
-export const MazdaLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="Mazda" {...props} />;
+export const OsungLogo = (props: SVGProps<SVGSVGElement>) => <TextLogo text="OSUNG" {...props} />;
 
 
 export const WhatsAppIcon = (props: SVGProps<SVGSVGElement>) => (
