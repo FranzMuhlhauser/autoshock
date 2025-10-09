@@ -46,6 +46,7 @@ export default function BrandsSection() {
                     <BrandsList />
                     <BrandsList aria-hidden />
                 </div>
+                <p className="text-center text-muted-foreground mt-8">Y muchas marcas mas...</p>
             </div>
         </section>
     );
