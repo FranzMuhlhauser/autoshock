@@ -2,36 +2,18 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const faqItems = [
     {
+        question: "¿Qué marcas de amortiguadores manejan?",
+        answer: "Trabajamos con las mejores marcas del mercado: KYB, Monroe, Gabriel, Bilstein, Corven, IBN y Strada. Todas son marcas originales con garantía de fábrica."
+    },
+    {
         question: "¿Cuándo debo cambiar los amortiguadores de mi auto?",
-        answer: "Se recomienda revisar los amortiguadores cada 20.000 km y cambiarlos entre los 60.000 y 80.000 km, dependiendo del uso y las condiciones de manejo. Signos de desgaste incluyen rebote excesivo, inestabilidad en curvas o fugas de aceite.",
-        videoId: "UIWe1qD2qus"
+        answer: "Se recomienda cambiar los amortiguadores cada 80,000-100,000 km o cuando notes rebotes excesivos, ruidos al pasar por baches, o desgaste irregular de neumáticos."
     },
     {
-        question: "¿Qué es el tren delantero y por qué es importante?",
-        answer: "El tren delantero es el conjunto de piezas que conectan las ruedas delanteras con el chasis del vehículo. Es crucial para la dirección, estabilidad y seguridad. Un tren delantero en mal estado puede causar desgaste irregular de neumáticos y pérdida de control.",
-        videoId: "m_qm6l5a94A"
-    },
-    {
-        question: "¿Ofrecen garantía en sus productos?",
-        answer: "Sí, todos nuestros productos cuentan con garantía total contra defectos de fabricación. Nuestra prioridad es la calidad y la confianza de nuestros clientes. Consulta los términos específicos para cada producto al momento de la compra."
-    },
-    {
-        question: "¿Tienen repuestos para mi modelo de vehículo?",
-        answer: "Contamos con un amplio stock para la mayoría de las marcas y modelos que circulan en Chile. Desde Chevrolet y Ford hasta Toyota y Nissan. Puedes contactarnos directamente para confirmar la disponibilidad para tu vehículo."
-    },
+        question: "¿Tienen repuestos para todas las marcas de autos?",
+        answer: "Sí, tenemos repuestos para Toyota, Honda, Nissan, Chevrolet, Ford, Hyundai, Kia y muchas más marcas. Contamos con un amplio stock de amortiguadores y repuestos de suspensión."
+    }
 ];
-
-const YoutubeEmbed = ({ videoId }: { videoId: string }) => (
-    <div className="relative overflow-hidden w-full pt-[56.25%] rounded-lg mt-4">
-        <iframe
-            className="absolute top-0 left-0 bottom-0 right-0 w-full h-full"
-            src={`https://www.youtube.com/embed/${videoId}`}
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-        ></iframe>
-    </div>
-)
 
 export default function FaqSection() {
     return (
@@ -49,7 +31,6 @@ export default function FaqSection() {
                             <AccordionTrigger className="text-left text-lg font-semibold">{item.question}</AccordionTrigger>
                             <AccordionContent className="text-muted-foreground text-base">
                                 {item.answer}
-                                {item.videoId && <YoutubeEmbed videoId={item.videoId} />}
                             </AccordionContent>
                         </AccordionItem>
                     ))}
