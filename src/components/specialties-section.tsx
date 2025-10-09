@@ -4,7 +4,7 @@
 import Image from 'next/image';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { MoogLogo, ThcLogo, BogeLogo, SachsLogo, DaherLogo } from '@/components/icons';
+import { MoogLogo, ThcLogo, BogeLogo, SachsLogo, DaherLogo, CorvenLogo, OsungLogo } from '@/components/icons';
 import { Badge } from '@/components/ui/badge';
 import Link from 'next/link';
 
