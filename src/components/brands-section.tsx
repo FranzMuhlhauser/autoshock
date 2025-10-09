@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { cn } from "@/lib/utils";
 
 const brands = [
   { name: "Ford", src: "/images/logo_carrusel/fordlogo.webp" },
@@ -17,8 +18,11 @@ const BrandsList = ({ 'aria-hidden': ariaHidden }: { 'aria-hidden'?: boolean }) 
                     src={brand.src}
                     alt={`${brand.name} logo`}
                     width={160}
-                    height={50}
-                    className="h-12 w-auto object-contain grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-400 hover:scale-110"
+                    height={60}
+                    className={cn(
+                        "w-auto object-contain grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-400 hover:scale-110",
+                        brand.name === "Kia" ? "h-12" : "h-16"
+                    )}
                     title={brand.name}
                 />
             </li>
