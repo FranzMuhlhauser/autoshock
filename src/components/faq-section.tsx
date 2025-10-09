@@ -76,6 +76,18 @@ export default function FaqSection() {
                                     ></iframe>
                                 </div>
                             </div>
+                             <div className="mt-4">
+                                <h4 className="font-semibold text-premium-yellow mb-2">Funcionamientos de la suspención en terreno</h4>
+                                <div className="aspect-video w-full">
+                                    <iframe
+                                        className="w-full h-full rounded-lg"
+                                        src="https://www.youtube.com/embed/j0vhTg82Pz0"
+                                        title="Funcionamientos de la suspención en terreno"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen
+                                    ></iframe>
+                                </div>
+                            </div>
                         </AccordionContent>
                     </AccordionItem>
                 </Accordion>
