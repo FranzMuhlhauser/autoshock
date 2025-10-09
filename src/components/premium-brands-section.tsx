@@ -1,4 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { MessageCircle } from "lucide-react";
 
 const brands = [
     { name: "Bilstein", src: "/images/Logos/Bilstein-logo.webp", width: 150, height: 40 },
@@ -22,9 +25,9 @@ export default function PremiumBrandsSection() {
                 <p className="text-muted-foreground max-w-2xl mx-auto mb-12">
                     Trabajamos con las mejores marcas del mercado para garantizar la máxima calidad y durabilidad.
                 </p>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 items-center max-w-4xl mx-auto">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-8 items-center max-w-4xl mx-auto">
                     {brands.map((brand) => (
-                        <div key={brand.name} className="flex justify-center items-center h-16">
+                        <div key={brand.name} className="flex justify-center items-center h-20">
                             <Image 
                                 src={brand.src}
                                 alt={`${brand.name} Logo`}
@@ -35,6 +38,19 @@ export default function PremiumBrandsSection() {
                             />
                         </div>
                     ))}
+                </div>
+
+                <div className="max-w-4xl mx-auto mt-20 bg-background p-10 rounded-lg text-center">
+                    <h3 className="font-headline text-3xl font-bold mb-4">¿Necesitas asesoría especializada?</h3>
+                    <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
+                        Nuestro equipo de expertos está listo para ayudarte a encontrar la mejor solución para tu vehículo
+                    </p>
+                    <Button asChild size="lg" className="rounded-full">
+                        <Link href="#contacto">
+                            <MessageCircle className="mr-2 h-5 w-5" />
+                            Contactar Ahora
+                        </Link>
+                    </Button>
                 </div>
             </div>
         </section>
