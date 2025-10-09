@@ -22,15 +22,15 @@ export default function PremiumBrandsSection() {
                 <p className="text-muted-foreground max-w-2xl mx-auto mb-12">
                     Trabajamos con las mejores marcas del mercado para garantizar la máxima calidad y durabilidad.
                 </p>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-8 items-center max-w-4xl mx-auto">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 items-center max-w-4xl mx-auto">
                     {brands.map((brand) => (
                         <div key={brand.name} className="flex justify-center">
                             <Image 
                                 src={brand.src}
                                 alt={`${brand.name} Logo`}
-                                width={200}
-                                height={80}
-                                className="object-contain h-20 w-auto text-muted-foreground transition-all duration-300 hover:scale-110"
+                                width={150}
+                                height={60}
+                                className="object-contain h-16 w-auto text-muted-foreground transition-all duration-300 hover:scale-110"
                                 title={brand.name}
                             />
                         </div>
