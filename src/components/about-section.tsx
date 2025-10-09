@@ -1,11 +1,16 @@
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Award, Handshake, Heart, ShieldCheck, Briefcase } from "lucide-react";
+import { Award, Handshake, Heart, ShieldCheck, Briefcase, Gem } from "lucide-react";
 
 const values = [
     {
-        icon: <ShieldCheck className="h-8 w-8 text-primary" />,
+        icon: <Gem className="h-8 w-8 text-primary" />,
         title: "Honestidad",
         description: "Transparencia y sinceridad en cada interacción con nuestros clientes y proveedores."
+    },
+    {
+        icon: <ShieldCheck className="h-8 w-8 text-primary" />,
+        title: "Confianza",
+        description: "Construimos relaciones duraderas, asegurando que cada cliente reciba productos y asesoría fiables."
     },
     {
         icon: <Briefcase className="h-8 w-8 text-primary" />,
@@ -47,7 +52,7 @@ export default function AboutSection() {
                     </div>
                     <div>
                         <h3 className="font-headline text-2xl font-bold mb-6">Nuestros Valores</h3>
-                        <div className="grid sm:grid-cols-2 gap-4">
+                        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                             {values.map((value) => (
                                 <Card key={value.title} className="bg-card border-border hover:border-primary/50 hover:shadow-lg transition-all">
                                     <CardHeader className="flex flex-row items-center gap-4 pb-2">
