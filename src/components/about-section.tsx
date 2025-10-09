@@ -22,13 +22,13 @@ export default function AboutSection() {
                             Somos una empresa familiar con más de 25 años de experiencia en Viña del Mar, especializados en repuestos para vehículos livianos, camiones y autobuses. Trabajamos con las mejores marcas y productos del mercado, ofreciendo una atención de calidad y personalizada para satisfacer las necesidades de nuestros clientes.
                         </p>
                     </div>
-                    <div className="flex items-center justify-center bg-card p-8 rounded-lg">
+                    <div className="flex items-center justify-center bg-card p-8 rounded-lg overflow-hidden">
                         <Image 
                             src="/images/logo_auto_shock.webp"
                             alt="Auto Shock Logo"
                             width={300}
                             height={45}
-                            className="object-contain"
+                            className="object-contain transition-transform duration-300 hover:scale-110"
                         />
                     </div>
                 </div>
