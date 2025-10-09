@@ -24,10 +24,10 @@ export default function AboutSection() {
                     </div>
                     <div className="flex items-center justify-center bg-card p-8 rounded-lg">
                         <Image 
-                            src="/images/logo_autoshock_cuadrado.webp"
-                            alt="Auto Shock Logo Cuadrado"
+                            src="/images/logo_auto_shock.webp"
+                            alt="Auto Shock Logo"
                             width={300}
-                            height={300}
+                            height={45}
                             className="object-contain"
                         />
                     </div>
