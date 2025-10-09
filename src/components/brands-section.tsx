@@ -9,9 +9,9 @@ const brands = [
 ];
 
 const BrandsList = ({ 'aria-hidden': ariaHidden }: { 'aria-hidden'?: boolean }) => (
-    <ul className="flex items-center justify-center md:justify-start animate-infinite-scroll" aria-hidden={ariaHidden}>
+    <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden={ariaHidden}>
         {brands.map((brand, index) => (
-            <li key={index} className="flex-shrink-0 mx-8">
+            <li key={index} className="flex-shrink-0">
                 <Image 
                     src={brand.src}
                     alt={`${brand.name} logo`}
