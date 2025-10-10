@@ -5,3 +5,10 @@ runConfig:
   # Increase this value if you'd like to automatically spin up
   # more instances in response to increased traffic.
   maxInstances: 1
+# Environment variables are secrets created using the Secret Manager.
+# Set an environment variable by retrieving its value from a secret.
+# The following format is used: VARIABLE_NAME: "secret:SECRET_ID"
+# https://firebase.google.com/docs/app-hosting/configure-backend#environment-variables
+env:
+  - variable: RESEND_API_KEY
+    secret: RESEND_API_KEY
