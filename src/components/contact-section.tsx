@@ -163,7 +163,7 @@ export default function ContactSection() {
                             </Button>
                             <Button variant="outline" asChild className="w-full bg-[#32C7F2] text-white hover:bg-[#29a8d1] hover:text-white">
                                 <a href="https://waze.com/ul?ll=-33.0113,-71.5365&navigate=yes" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
-                                    <WazeLogo className="h-6 w-6" /> Abrir en Waze
+                                    <WazeLogo className="h-8 w-8" /> Abrir en Waze
                                 </a>
                             </Button>
                         </div>
