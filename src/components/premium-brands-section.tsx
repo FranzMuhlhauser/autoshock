@@ -2,18 +2,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const brands = [
-    { name: "Bilstein", src: "/images/Logos/Bilstein-logo.webp", width: 150, height: 40 },
-    { name: "Corven", src: "/images/Logos/corven-logo.webp", width: 140, height: 50 },
-    { name: "Gabriel", src: "/images/Logos/Gabriel_logo.webp", width: 200, height: 65 },
-    { name: "IBN", src: "/images/Logos/ibn-logo.webp", width: 120, height: 60 },
-    { name: "KYB", src: "/images/Logos/kyb-logo.webp", width: 120, height: 50 },
-    { name: "Monroe", src: "/images/Logos/monroe_logo.webp", width: 160, height: 40 },
-    { name: "Strada", src: "/images/Logos/strada-logo.webp", width: 140, height: 50 },
-    { name: "Beste", src: "/images/Logos/beste_logo.webp", width: 130, height: 60 },
-    { name: "Daher", src: "/images/Logos/logo_daher.webp", width: 160, height: 45 },
-];
+    { name: "Bilstein", id: "logo-bilstein", width: 150, height: 40 },
+    { name: "Corven", id: "logo-corven", width: 140, height: 50 },
+    { name: "Gabriel", id: "logo-gabriel", width: 200, height: 65 },
+    { name: "IBN", id: "logo-ibn", width: 120, height: 60 },
+    { name: "KYB", id: "logo-kyb", width: 120, height: 50 },
+    { name: "Monroe", id: "logo-monroe", width: 160, height: 40 },
+    { name: "Strada", id: "logo-strada", width: 140, height: 50 },
+    { name: "Beste", id: "logo-beste", width: 130, height: 60 },
+    { name: "Daher", id: "logo-daher", width: 160, height: 45 },
+].map(brand => ({ ...brand, data: PlaceHolderImages.find(p => p.id === brand.id) }));
 
 export default function PremiumBrandsSection() {
     return (
@@ -27,16 +28,19 @@ export default function PremiumBrandsSection() {
                 </p>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-8 items-center max-w-4xl mx-auto">
                     {brands.map((brand) => (
-                        <div key={brand.name} className="flex justify-center items-center h-20">
-                            <Image 
-                                src={brand.src}
-                                alt={`${brand.name} Logo`}
-                                width={brand.width}
-                                height={brand.height}
-                                className="object-contain max-h-full max-w-full text-muted-foreground transition-all duration-300 hover:scale-110"
-                                title={brand.name}
-                            />
-                        </div>
+                        brand.data && (
+                            <div key={brand.name} className="flex justify-center items-center h-20">
+                                <Image 
+                                    src={brand.data.imageUrl}
+                                    alt={brand.data.description}
+                                    width={brand.width}
+                                    height={brand.height}
+                                    className="object-contain max-h-full max-w-full text-muted-foreground transition-all duration-300 hover:scale-110"
+                                    title={brand.name}
+                                    data-ai-hint={brand.data.imageHint}
+                                />
+                            </div>
+                        )
                     ))}
                 </div>
 

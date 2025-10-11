@@ -7,6 +7,7 @@ import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const navLinks = [
   { name: 'Inicio', href: '#inicio' },
@@ -17,13 +18,22 @@ const navLinks = [
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const logoImage = PlaceHolderImages.find(p => p.id === 'logo-auto-shock');
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
-        <div className="flex items-center gap-2" aria-label="Amortiguadores Auto Shock Home">
-          <Image src="/images/logo_auto_shock.webp" alt="Logo Auto Shock" width={160} height={24} />
-        </div>
+        <Link href="#inicio" className="flex items-center gap-2" aria-label="Amortiguadores Auto Shock Home">
+          {logoImage && (
+            <Image 
+              src={logoImage.imageUrl} 
+              alt={logoImage.description}
+              width={160} 
+              height={24}
+              data-ai-hint={logoImage.imageHint}
+            />
+          )}
+        </Link>
 
         <nav className="hidden md:flex items-center gap-6 text-base">
           {navLinks.map((link) => (
@@ -52,7 +62,15 @@ export default function Header() {
              <SheetHeader className="flex-row justify-between items-center mb-8">
                 <SheetTitle className="sr-only">Menú de Navegación</SheetTitle>
                 <div className="flex items-center gap-2">
-                   <Image src="/images/logo_auto_shock.webp" alt="Logo Auto Shock" width={160} height={24} />
+                  {logoImage && (
+                    <Image 
+                      src={logoImage.imageUrl} 
+                      alt={logoImage.description}
+                      width={160} 
+                      height={24}
+                      data-ai-hint={logoImage.imageHint}
+                    />
+                  )}
                 </div>
                 <SheetClose asChild>
                   <Button variant="ghost" size="icon">

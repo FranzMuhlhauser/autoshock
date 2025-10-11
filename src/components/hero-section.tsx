@@ -1,8 +1,8 @@
-
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const TrustIndicator = ({ children }: { children: React.ReactNode }) => (
   <div className="text-center">
@@ -11,17 +11,20 @@ const TrustIndicator = ({ children }: { children: React.ReactNode }) => (
 );
 
 export default function HeroSection() {
+  const heroImage = PlaceHolderImages.find(p => p.id === 'hero-background');
 
   return (
     <section id="inicio" className="relative w-full min-h-screen flex items-center justify-center">
-      <Image
-          src="/images/hero/hero.webp"
-          alt="Taller mecánico de Auto Shock"
+      {heroImage && (
+        <Image
+          src={heroImage.imageUrl}
+          alt={heroImage.description}
           fill
           className="object-cover"
           priority
-          data-ai-hint="car workshop"
+          data-ai-hint={heroImage.imageHint}
         />
+      )}
       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
       <div className="absolute inset-0 bg-black/50"></div>
 

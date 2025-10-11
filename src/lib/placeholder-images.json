@@ -1,64 +1,220 @@
 {
   "placeholderImages": [
     {
-      "id": "specialty-amortiguadores",
-      "description": "Image of a car shock absorber for light vehicles.",
-      "imageUrl": "https://images.unsplash.com/photo-1623651342869-019b5dd24d4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjYXIlMjBzaG9jayUyMGFic29yYmVyfGVufDB8fHx8MTc1OTUyNTM0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "car shock absorber"
+      "id": "logo-auto-shock",
+      "description": "Logo de Amortiguadores Auto Shock Viña del Mar",
+      "imageUrl": "/images/logo_auto_shock.webp",
+      "imageHint": "company logo"
     },
     {
-      "id": "specialty-portalon",
-      "description": "Image of a trunk gas spring.",
-      "imageUrl": "https://images.unsplash.com/photo-1678472156730-2d80e958b9a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjYXIlMjB0cnVuayUyMHNob2NrfGVufDB8fHx8MTc1OTUyNTM0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "car trunk shock"
+      "id": "hero-background",
+      "description": "Taller mecánico de Auto Shock",
+      "imageUrl": "/images/hero/hero.webp",
+      "imageHint": "car workshop"
     },
     {
-      "id": "specialty-cataliticos",
-      "description": "Image of a catalytic converter.",
-      "imageUrl": "https://images.unsplash.com/photo-1512592990601-6c522134d170?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjYXRhbHl0aWMlMjBjb252ZXJ0ZXJ8ZW58MHx8fHwxNzU5NTI1MzQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "id": "amortiguador-gabriel",
+      "description": "Amortiguadores para autos marca Gabriel",
+      "imageUrl": "/images/productos/amortiguadores_gabriel.webp",
+      "imageHint": "shock absorber"
+    },
+    {
+      "id": "amortiguador-kyb",
+      "description": "Amortiguador de alto rendimiento marca KYB",
+      "imageUrl": "/images/productos/amortiguador_kyb.webp",
+      "imageHint": "performance shock absorber"
+    },
+    {
+      "id": "amortiguador-daher",
+      "description": "Amortiguador de portalón marca Daher",
+      "imageUrl": "/images/productos/amortiguador_daher.webp",
+      "imageHint": "trunk shock"
+    },
+    {
+      "id": "pack-amortiguador-daher",
+      "description": "Pack de amortiguadores de maletero Daher",
+      "imageUrl": "/images/productos/pack_amortiguador_daher.webp",
+      "imageHint": "trunk shock pack"
+    },
+    {
+      "id": "catalitico-gabriel",
+      "description": "Convertidor catalítico para auto marca Gabriel",
+      "imageUrl": "/images/productos/catalitico_gabriel.webp",
       "imageHint": "catalytic converter"
     },
     {
-      "id": "specialty-camiones",
-      "description": "Image of a heavy-duty shock absorber for trucks.",
-      "imageUrl": "https://images.unsplash.com/photo-1666508330099-0c7c6ab0e332?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx0cnVjayUyMHNob2NrJTIwYWJzb3JiZXJ8ZW58MHx8fHwxNzU5NTI1MzQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "id": "amortiguador-camion",
+      "description": "Amortiguador de alta resistencia para camiones",
+      "imageUrl": "/images/productos/amortiguador_camion.webp",
       "imageHint": "truck shock absorber"
     },
     {
-      "id": "tren-delantero-main",
-      "description": "Image representing the front-end assembly of a car.",
-      "imageUrl": "https://images.unsplash.com/photo-1679709161252-0229a8a9b586?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjYXIlMjBzdXNwZW5zaW9ufGVufDB8fHx8MTc1OTUyNTM0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "car suspension"
+      "id": "td-axiales",
+      "description": "Repuesto de axial para tren delantero",
+      "imageUrl": "/images/productos_tren_delantero/axiales.webp",
+      "imageHint": "axial joint"
     },
     {
-      "id": "sub-axiales",
-      "description": "Image of an axial joint.",
-      "imageUrl": "https://images.unsplash.com/photo-1665471121424-6361a5c31bf9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjYXIlMjBheGxlfGVufDB8fHx8MTc1OTUyNTM0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "car axle"
+      "id": "td-bandejas",
+      "description": "Repuesto de bandeja para tren delantero",
+      "imageUrl": "/images/productos_tren_delantero/bandejas.webp",
+      "imageHint": "control arm"
     },
     {
-      "id": "sub-bandejas",
-      "description": "Image of a suspension control arm.",
-      "imageUrl": "https://images.unsplash.com/photo-1597424020433-e08f7da1175d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzdXNwZW5zaW9uJTIwYXJtfGVufDB8fHx8MTc1OTUyNTM0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "suspension arm"
+      "id": "td-bieletas",
+      "description": "Repuesto de bieleta para tren delantero",
+      "imageUrl": "/images/productos_tren_delantero/bieleta.webp",
+      "imageHint": "stabilizer link"
     },
     {
-      "id": "sub-bieletas",
-      "description": "Image of a stabilizer link.",
-      "imageUrl": "https://images.unsplash.com/photo-1681351623077-e4cc438f0548?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjYXIlMjBsaW5rfGVufDB8fHx8MTc1OTUyNTM0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "car link"
+      "id": "td-cazoletas",
+      "description": "Repuesto de cazoleta para tren delantero",
+      "imageUrl": "/images/productos_tren_delantero/cazoletas.webp",
+      "imageHint": "strut mount"
     },
     {
-      "id": "sub-rotulas",
-      "description": "Image of a ball joint.",
-      "imageUrl": "https://images.unsplash.com/photo-1676030789620-664650aa60a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxiYWxsJTIwam9pbnR8ZW58MHx8fHwxNzU5NTI1MzQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "id": "td-espirales",
+      "description": "Repuesto de espiral para tren delantero",
+      "imageUrl": "/images/productos_tren_delantero/espirales.webp",
+      "imageHint": "coil spring"
+    },
+    {
+      "id": "td-rotulas",
+      "description": "Repuesto de rótula para tren delantero",
+      "imageUrl": "/images/productos_tren_delantero/rotulas.webp",
       "imageHint": "ball joint"
     },
     {
-      "id": "sub-terminales",
-      "description": "Image of a tie rod end.",
-      "imageUrl": "https://images.unsplash.com/photo-1597977172397-fed29e53c30d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dGllJTIwcm9kJTIwZW5kfGVufDB8fHx8MTc1OTUyNTM0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "id": "td-terminales",
+      "description": "Repuesto de terminal para tren delantero",
+      "imageUrl": "/images/productos_tren_delantero/terminales.webp",
       "imageHint": "tie rod end"
+    },
+    {
+      "id": "logo-bilstein",
+      "description": "Logo de Bilstein",
+      "imageUrl": "/images/Logos/Bilstein-logo.webp",
+      "imageHint": "brand logo"
+    },
+    {
+      "id": "logo-corven",
+      "description": "Logo de Corven",
+      "imageUrl": "/images/Logos/corven-logo.webp",
+      "imageHint": "brand logo"
+    },
+    {
+      "id": "logo-gabriel",
+      "description": "Logo de Gabriel",
+      "imageUrl": "/images/Logos/Gabriel_logo.webp",
+      "imageHint": "brand logo"
+    },
+    {
+      "id": "logo-ibn",
+      "description": "Logo de IBN",
+      "imageUrl": "/images/Logos/ibn-logo.webp",
+      "imageHint": "brand logo"
+    },
+    {
+      "id": "logo-kyb",
+      "description": "Logo de KYB",
+      "imageUrl": "/images/Logos/kyb-logo.webp",
+      "imageHint": "brand logo"
+    },
+    {
+      "id": "logo-monroe",
+      "description": "Logo de Monroe",
+      "imageUrl": "/images/Logos/monroe_logo.webp",
+      "imageHint": "brand logo"
+    },
+    {
+      "id": "logo-strada",
+      "description": "Logo de Strada",
+      "imageUrl": "/images/Logos/strada-logo.webp",
+      "imageHint": "brand logo"
+    },
+    {
+      "id": "logo-beste",
+      "description": "Logo de Beste",
+      "imageUrl": "/images/Logos/beste_logo.webp",
+      "imageHint": "brand logo"
+    },
+    {
+      "id": "logo-daher",
+      "description": "Logo de Daher",
+      "imageUrl": "/images/Logos/logo_daher.webp",
+      "imageHint": "brand logo"
+    },
+    {
+      "id": "logo-eurotec",
+      "description": "Logo de Eurotec",
+      "imageUrl": "/images/Logos/eurotec_logo.webp",
+      "imageHint": "brand logo"
+    },
+    {
+      "id": "logo-sachs",
+      "description": "Logo de Sachs",
+      "imageUrl": "/images/Logos/sachs_logo.webp",
+      "imageHint": "brand logo"
+    },
+    {
+      "id": "logo-prt",
+      "description": "Logo de PRT",
+      "imageUrl": "/images/Logos/prt_logo_resultado.webp",
+      "imageHint": "brand logo"
+    },
+    {
+      "id": "logo-moog",
+      "description": "Logo de MOOG",
+      "imageUrl": "/images/Logos/moog_logo.webp",
+      "imageHint": "brand logo"
+    },
+    {
+      "id": "logo-thc",
+      "description": "Logo de THC",
+      "imageUrl": "/images/Logos/thc_logo.webp",
+      "imageHint": "brand logo"
+    },
+    {
+      "id": "logo-osung",
+      "description": "Logo de Osung",
+      "imageUrl": "/images/Logos/osung_logo.webp",
+      "imageHint": "brand logo"
+    },
+    {
+      "id": "carrusel-ford",
+      "description": "Logo de Ford para carrusel",
+      "imageUrl": "/images/logo_carrusel/fordlogo.webp",
+      "imageHint": "car brand logo"
+    },
+    {
+      "id": "carrusel-kia",
+      "description": "Logo de Kia para carrusel",
+      "imageUrl": "/images/logo_carrusel/kialogo.webp",
+      "imageHint": "car brand logo"
+    },
+    {
+      "id": "carrusel-mitsubishi",
+      "description": "Logo de Mitsubishi para carrusel",
+      "imageUrl": "/images/logo_carrusel/mitsubishi_logo.webp",
+      "imageHint": "car brand logo"
+    },
+    {
+      "id": "carrusel-nissan",
+      "description": "Logo de Nissan para carrusel",
+      "imageUrl": "/images/logo_carrusel/nissanlogo.webp",
+      "imageHint": "car brand logo"
+    },
+    {
+      "id": "carrusel-toyota",
+      "description": "Logo de Toyota para carrusel",
+      "imageUrl": "/images/logo_carrusel/toyotalogo.webp",
+      "imageHint": "car brand logo"
+    },
+    {
+      "id": "carrusel-chevrolet",
+      "description": "Logo de Chevrolet para carrusel",
+      "imageUrl": "/images/logo_carrusel/chevroletlogo.webp",
+      "imageHint": "car brand logo"
     }
   ]
 }

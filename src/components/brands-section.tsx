@@ -4,15 +4,17 @@ import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Mail } from "lucide-react";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const brands = [
-  { name: "Ford", src: "/images/logo_carrusel/fordlogo.webp" },
-  { name: "Kia", src: "/images/logo_carrusel/kialogo.webp" },
-  { name: "Mitsubishi", src: "/images/logo_carrusel/mitsubishi_logo.webp" },
-  { name: "Nissan", src: "/images/logo_carrusel/nissanlogo.webp" },
-  { name: "Toyota", src: "/images/logo_carrusel/toyotalogo.webp" },
-  { name: "Chevrolet", src: "/images/logo_carrusel/chevroletlogo.webp" },
-];
+  { name: "Ford", id: "carrusel-ford" },
+  { name: "Kia", id: "carrusel-kia" },
+  { name: "Mitsubishi", id: "carrusel-mitsubishi" },
+  { name: "Nissan", id: "carrusel-nissan" },
+  { name: "Toyota", id: "carrusel-toyota" },
+  { name: "Chevrolet", id: "carrusel-chevrolet" },
+].map(brand => ({ ...brand, data: PlaceHolderImages.find(p => p.id === brand.id) }));
+
 
 const otherBrands = [
     'Peugeot', 'Volkswagen', 'Renault', 'Mazda', 'Honda', 'Hyundai', 'Suzuki', 'Subaru'
@@ -21,19 +23,22 @@ const otherBrands = [
 const BrandsList = ({ 'aria-hidden': ariaHidden }: { 'aria-hidden'?: boolean }) => (
     <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden={ariaHidden}>
         {brands.map((brand, index) => (
-            <li key={index} className="flex-shrink-0">
-                <Image 
-                    src={brand.src}
-                    alt={`${brand.name} logo`}
-                    width={160}
-                    height={80}
-                    className={cn(
-                        "w-auto object-contain grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-400 hover:scale-110",
-                        brand.name === "Kia" ? "h-12" : "h-20"
-                    )}
-                    title={brand.name}
-                />
-            </li>
+            brand.data && (
+                <li key={index} className="flex-shrink-0">
+                    <Image 
+                        src={brand.data.imageUrl}
+                        alt={brand.data.description}
+                        width={160}
+                        height={80}
+                        className={cn(
+                            "w-auto object-contain grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-400 hover:scale-110",
+                            brand.name === "Kia" ? "h-12" : "h-20"
+                        )}
+                        title={brand.name}
+                        data-ai-hint={brand.data.imageHint}
+                    />
+                </li>
+            )
         ))}
     </ul>
 );

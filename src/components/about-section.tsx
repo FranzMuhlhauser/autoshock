@@ -1,6 +1,9 @@
 import Image from "next/image";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export default function AboutSection() {
+    const logoImage = PlaceHolderImages.find(p => p.id === 'logo-auto-shock');
+
     return (
         <section id="nosotros" className="pt-20 md:pt-32 pb-10 md:pb-16 bg-card">
             <div className="container">
@@ -23,13 +26,16 @@ export default function AboutSection() {
                         </p>
                     </div>
                     <div className="flex items-center justify-center bg-card p-8 rounded-lg overflow-hidden">
-                        <Image 
-                            src="/images/logo_auto_shock.webp"
-                            alt="Logo de Amortiguadores Auto Shock Viña del Mar"
-                            width={300}
-                            height={45}
-                            className="object-contain transition-transform duration-300 hover:scale-110"
-                        />
+                        {logoImage && (
+                            <Image 
+                                src={logoImage.imageUrl}
+                                alt={logoImage.description}
+                                width={300}
+                                height={45}
+                                className="object-contain transition-transform duration-300 hover:scale-110"
+                                data-ai-hint={logoImage.imageHint}
+                            />
+                        )}
                     </div>
                 </div>
             </div>
