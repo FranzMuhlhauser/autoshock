@@ -1,15 +1,22 @@
 
+"use client";
+
+import dynamic from 'next/dynamic';
 import Header from '@/components/header';
 import HeroSection from '@/components/hero-section';
-import SpecialtiesSection from '@/components/specialties-section';
-import FaqSection from '@/components/faq-section';
-import BrandsSection from '@/components/brands-section';
-import AboutSection from '@/components/about-section';
-import ContactSection from '@/components/contact-section';
-import Footer from '@/components/footer';
 import WhatsAppButton from '@/components/whatsapp-button';
-import PremiumBrandsSection from '@/components/premium-brands-section';
-import ValuesSection from '@/components/values-section';
+
+// Carga los componentes de forma diferida para mejorar el rendimiento de carga inicial.
+// Estos componentes no se cargarán hasta que estén cerca de ser visibles en la pantalla.
+const SpecialtiesSection = dynamic(() => import('@/components/specialties-section'));
+const PremiumBrandsSection = dynamic(() => import('@/components/premium-brands-section'));
+const BrandsSection = dynamic(() => import('@/components/brands-section'));
+const AboutSection = dynamic(() => import('@/components/about-section'));
+const ValuesSection = dynamic(() => import('@/components/values-section'));
+const FaqSection = dynamic(() => import('@/components/faq-section'));
+const ContactSection = dynamic(() => import('@/components/contact-section'));
+const Footer = dynamic(() => import('@/components/footer'));
+
 
 export default function Home() {
   return (
