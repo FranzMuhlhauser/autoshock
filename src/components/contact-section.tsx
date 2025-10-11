@@ -162,7 +162,7 @@ export default function ContactSection() {
                                     <GoogleMapsLogo className="h-5 w-5" /> Abrir en Google Maps
                                 </a>
                             </Button>
-                            <Button variant="outline" asChild className="w-full bg-[#32C7F2] text-white hover:bg-[#29a8d1] hover:text-white">
+                            <Button variant="outline" asChild className="w-full bg-[#33CCFF] text-white hover:bg-[#29a8d1] hover:text-white">
                                 <a href="https://waze.com/ul?ll=-33.0113,-71.5365&navigate=yes" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
                                     <WazeLogo /> Abrir en Waze
                                 </a>
