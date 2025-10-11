@@ -157,13 +157,13 @@ export default function ContactSection() {
                         </div>
                         <div className="flex gap-4">
                             <Button variant="outline" asChild className="w-full">
-                                <a href="https://www.google.com/maps/search/?api=1&query=Avenida+Benidorm+1280%2C+Vi%C3%B1a+del+Mar%2C+Chile" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                                <a href="https://www.google.com/maps/search/?api=1&query=Avenida+Benidorm+1280%2C+Vi%C3%B1a+del+Mar%2C+Chile" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
                                     <GoogleMapsLogo className="h-5 w-5" /> Abrir en Google Maps
                                 </a>
                             </Button>
-                            <Button variant="accent" asChild className="w-full">
-                                <a href="https://waze.com/ul?ll=-33.0113,-71.5365&navigate=yes" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                                    <WazeLogo className="h-5 w-5" /> Abrir en Waze
+                            <Button variant="outline" asChild className="w-full bg-[#32C7F2] text-white hover:bg-[#29a8d1] hover:text-white">
+                                <a href="https://waze.com/ul?ll=-33.0113,-71.5365&navigate=yes" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
+                                    <WazeLogo className="h-6 w-6" /> Abrir en Waze
                                 </a>
                             </Button>
                         </div>
