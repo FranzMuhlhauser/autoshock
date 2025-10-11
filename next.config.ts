@@ -65,10 +65,11 @@ const nextConfig: NextConfig = {
     ];
   },
   experimental: {
-    allowedDevOrigins: [
-      'https://*.cloudworkstations.dev',
-    ]
+    // Esta opción ya no es necesaria aquí o está en el lugar incorrecto.
   },
+  allowedDevOrigins: [
+    'https://*.cloudworkstations.dev',
+  ],
 };
 
 export default nextConfig;
