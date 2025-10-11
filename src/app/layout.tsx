@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, Poppins } from 'next/font/google';
+import { Roboto, Poppins } from 'next/font/google';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
@@ -7,10 +7,11 @@ import { cn } from '@/lib/utils';
 const appName = "Amortiguadores Auto Shock";
 const description = "Más de 25 años de experiencia en la venta de repuestos automotrices. Amortiguadores, trenes delanteros, portalones y más. Calidad premium que impulsa tu camino.";
 
-const inter = Inter({
+const roboto = Roboto({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-inter',
+  weight: ['400', '500', '700'],
+  variable: '--font-roboto',
 });
 
 const poppins = Poppins({
@@ -81,7 +82,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={`dark ${inter.variable} ${poppins.variable}`}>
+    <html lang="es" className={`dark ${roboto.variable} ${poppins.variable}`}>
       <head>
         <script
           type="application/ld+json"
