@@ -1,6 +1,6 @@
 "use client";
 
-import { useForm, Controller } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { Button } from '@/components/ui/button';
@@ -9,6 +9,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 const productOptions = [
     { value: 'Amortiguadores para vehículos livianos', label: 'Amortiguadores para vehículos livianos' },
@@ -99,90 +100,92 @@ export function WhatsappForm({ isOpen, onOpenChange }: { isOpen: boolean; onOpen
             Completa el formulario para que podamos ayudarte de manera más rápida y precisa.
           </DialogDescription>
         </DialogHeader>
-        <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-                <FormField
-                    control={form.control}
-                    name="producto"
-                    render={({ field }) => (
-                        <FormItem>
-                            <FormLabel>Producto de Interés</FormLabel>
-                            <Select onValueChange={field.onChange} defaultValue={field.value}>
-                                <FormControl>
-                                <SelectTrigger>
-                                    <SelectValue placeholder="Selecciona un producto..." />
-                                </SelectTrigger>
-                                </FormControl>
-                                <SelectContent>
-                                    {productOptions.map(opt => <SelectItem key={opt.value} value={opt.value}>{opt.label}</SelectItem>)}
-                                </SelectContent>
-                            </Select>
-                            <FormMessage />
-                        </FormItem>
-                    )}
-                />
-
-                {productoSeleccionado === 'Tren delantero para vehículos' && (
-                     <FormField
+        <ScrollArea className="max-h-[70vh] w-full pr-6">
+            <Form {...form}>
+                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+                    <FormField
                         control={form.control}
-                        name="subProducto"
+                        name="producto"
                         render={({ field }) => (
                             <FormItem>
-                                <FormLabel>Parte del Tren Delantero</FormLabel>
+                                <FormLabel>Producto de Interés</FormLabel>
                                 <Select onValueChange={field.onChange} defaultValue={field.value}>
                                     <FormControl>
                                     <SelectTrigger>
-                                        <SelectValue placeholder="Selecciona una parte..." />
+                                        <SelectValue placeholder="Selecciona un producto..." />
                                     </SelectTrigger>
                                     </FormControl>
                                     <SelectContent>
-                                        {trenDelanteroSubOptions.map(opt => <SelectItem key={opt.value} value={opt.value}>{opt.label}</SelectItem>)}
+                                        {productOptions.map(opt => <SelectItem key={opt.value} value={opt.value}>{opt.label}</SelectItem>)}
                                     </SelectContent>
                                 </Select>
                                 <FormMessage />
                             </FormItem>
                         )}
                     />
-                )}
 
-                {productoSeleccionado === 'Otros productos' && (
-                    <FormField
-                        control={form.control}
-                        name="otroProducto"
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>Tipo de producto que busca</FormLabel>
-                                <FormControl>
-                                    <Textarea placeholder="Ej: Focos, espejos, etc." {...field} />
-                                </FormControl>
-                                <FormMessage />
-                            </FormItem>
-                        )}
-                    />
-                )}
-                
-                {productoSeleccionado && (
-                    <>
-                        <FormField control={form.control} name="marca" render={({ field }) => (
-                            <FormItem><FormLabel>Marca del Vehículo</FormLabel><FormControl><Input placeholder="Ej: Toyota" {...field} /></FormControl><FormMessage /></FormItem>
-                        )} />
-                        <FormField control={form.control} name="modelo" render={({ field }) => (
-                            <FormItem><FormLabel>Modelo del Vehículo</FormLabel><FormControl><Input placeholder="Ej: Yaris" {...field} /></FormControl><FormMessage /></FormItem>
-                        )} />
-                        <FormField control={form.control} name="ano" render={({ field }) => (
-                            <FormItem><FormLabel>Año del Vehículo</FormLabel><FormControl><Input placeholder="Ej: 2021" type="number" {...field} /></FormControl><FormMessage /></FormItem>
-                        )} />
-                        <FormField control={form.control} name="matricula" render={({ field }) => (
-                            <FormItem><FormLabel>Matrícula / Patente</FormLabel><FormControl><Input placeholder="Ej: ABCD-12" {...field} /></FormControl><FormMessage /></FormItem>
-                        )} />
-                    </>
-                )}
+                    {productoSeleccionado === 'Tren delantero para vehículos' && (
+                         <FormField
+                            control={form.control}
+                            name="subProducto"
+                            render={({ field }) => (
+                                <FormItem>
+                                    <FormLabel>Parte del Tren Delantero</FormLabel>
+                                    <Select onValueChange={field.onChange} defaultValue={field.value}>
+                                        <FormControl>
+                                        <SelectTrigger>
+                                            <SelectValue placeholder="Selecciona una parte..." />
+                                        </SelectTrigger>
+                                        </FormControl>
+                                        <SelectContent>
+                                            {trenDelanteroSubOptions.map(opt => <SelectItem key={opt.value} value={opt.value}>{opt.label}</SelectItem>)}
+                                        </SelectContent>
+                                    </Select>
+                                    <FormMessage />
+                                </FormItem>
+                            )}
+                        />
+                    )}
 
-                <Button type="submit" className="w-full" disabled={!productoSeleccionado || form.formState.isSubmitting}>
-                    {form.formState.isSubmitting ? "Generando enlace..." : "Enviar a WhatsApp"}
-                </Button>
-            </form>
-        </Form>
+                    {productoSeleccionado === 'Otros productos' && (
+                        <FormField
+                            control={form.control}
+                            name="otroProducto"
+                            render={({ field }) => (
+                                <FormItem>
+                                    <FormLabel>Tipo de producto que busca</FormLabel>
+                                    <FormControl>
+                                        <Textarea placeholder="Ej: Focos, espejos, etc." {...field} />
+                                    </FormControl>
+                                    <FormMessage />
+                                </FormItem>
+                            )}
+                        />
+                    )}
+                    
+                    {productoSeleccionado && (
+                        <>
+                            <FormField control={form.control} name="marca" render={({ field }) => (
+                                <FormItem><FormLabel>Marca del Vehículo</FormLabel><FormControl><Input placeholder="Ej: Toyota" {...field} /></FormControl><FormMessage /></FormItem>
+                            )} />
+                            <FormField control={form.control} name="modelo" render={({ field }) => (
+                                <FormItem><FormLabel>Modelo del Vehículo</FormLabel><FormControl><Input placeholder="Ej: Yaris" {...field} /></FormControl><FormMessage /></FormItem>
+                            )} />
+                            <FormField control={form.control} name="ano" render={({ field }) => (
+                                <FormItem><FormLabel>Año del Vehículo</FormLabel><FormControl><Input placeholder="Ej: 2021" type="number" {...field} /></FormControl><FormMessage /></FormItem>
+                            )} />
+                            <FormField control={form.control} name="matricula" render={({ field }) => (
+                                <FormItem><FormLabel>Matrícula / Patente</FormLabel><FormControl><Input placeholder="Ej: ABCD-12" {...field} /></FormControl><FormMessage /></FormItem>
+                            )} />
+                        </>
+                    )}
+
+                    <Button type="submit" className="w-full" disabled={!productoSeleccionado || form.formState.isSubmitting}>
+                        {form.formState.isSubmitting ? "Generando enlace..." : "Enviar a WhatsApp"}
+                    </Button>
+                </form>
+            </Form>
+        </ScrollArea>
       </DialogContent>
     </Dialog>
   );
