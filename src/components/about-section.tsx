@@ -25,7 +25,7 @@ export default function AboutSection() {
                     <div className="flex items-center justify-center bg-card p-8 rounded-lg overflow-hidden">
                         <Image 
                             src="/images/logo_auto_shock.webp"
-                            alt="Auto Shock Logo"
+                            alt="Logo de Amortiguadores Auto Shock Viña del Mar"
                             width={300}
                             height={45}
                             className="object-contain transition-transform duration-300 hover:scale-110"

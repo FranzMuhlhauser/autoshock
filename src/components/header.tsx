@@ -22,7 +22,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2" aria-label="Amortiguadores Auto Shock Home">
-          <Image src="/images/logo_auto_shock.webp" alt="Auto Shock Logo" width={160} height={24} />
+          <Image src="/images/logo_auto_shock.webp" alt="Logo Auto Shock" width={160} height={24} />
         </div>
 
         <nav className="hidden md:flex items-center gap-6 text-base">
@@ -52,7 +52,7 @@ export default function Header() {
              <SheetHeader className="flex-row justify-between items-center mb-8">
                 <SheetTitle className="sr-only">Menú de Navegación</SheetTitle>
                 <div className="flex items-center gap-2">
-                   <Image src="/images/logo_auto_shock.webp" alt="Auto Shock Logo" width={160} height={24} />
+                   <Image src="/images/logo_auto_shock.webp" alt="Logo Auto Shock" width={160} height={24} />
                 </div>
                 <SheetClose asChild>
                   <Button variant="ghost" size="icon">
