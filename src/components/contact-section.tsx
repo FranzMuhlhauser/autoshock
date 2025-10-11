@@ -45,11 +45,12 @@ function ContactForm() {
       } else {
         throw new Error(response.error || "Hubo un problema al enviar el formulario.");
       }
-    } catch (error: any) {
+    } catch (error: unknown) {
+      const errorMessage = error instanceof Error ? error.message : "No se pudo enviar el mensaje. Por favor, inténtalo de nuevo.";
       toast({
         variant: "destructive",
         title: "Error",
-        description: error.message || "No se pudo enviar el mensaje. Por favor, inténtalo de nuevo.",
+        description: errorMessage,
       });
     }
   }

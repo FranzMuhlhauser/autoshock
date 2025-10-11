@@ -1,12 +1,37 @@
 import type {NextConfig} from 'next';
 
+const securityHeaders = [
+  {
+    key: 'X-DNS-Prefetch-Control',
+    value: 'on'
+  },
+  {
+    key: 'X-XSS-Protection',
+    value: '1; mode=block'
+  },
+  {
+    key: 'X-Frame-Options',
+    value: 'SAMEORIGIN'
+  },
+  {
+    key: 'X-Content-Type-Options',
+    value: 'nosniff'
+  },
+  {
+    key: 'Referrer-Policy',
+    value: 'origin-when-cross-origin'
+  }
+];
+
 const nextConfig: NextConfig = {
   /* config options here */
   typescript: {
-    ignoreBuildErrors: true,
+    // En producción, es mejor fallar la compilación si hay errores de TypeScript.
+    ignoreBuildErrors: false,
   },
   eslint: {
-    ignoreDuringBuilds: true,
+    // Forzar la revisión de ESLint durante la compilación para mantener la calidad del código.
+    ignoreDuringBuilds: false,
   },
   images: {
     remotePatterns: [
@@ -29,6 +54,15 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
     ],
+  },
+  async headers() {
+    return [
+      {
+        // Aplicar estas cabeceras a todas las rutas de la aplicación.
+        source: '/:path*',
+        headers: securityHeaders,
+      },
+    ];
   },
   experimental: {
     allowedDevOrigins: [

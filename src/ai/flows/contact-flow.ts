@@ -1,24 +1,25 @@
 'use server';
 /**
- * @fileOverview Flujo para el envío de correos de contacto.
- *
- * - sendContactMessage - Envía un correo electrónico desde el formulario de contacto.
- * - ContactMessageInput - El tipo de entrada para la función sendContactMessage.
- * - ContactMessageOutput - El tipo de retorno para la función sendContactMessage.
+ * @fileOverview Flujo para el envío de correos electrónicos desde el formulario de contacto.
+ * @description Este archivo contiene la lógica para procesar y enviar un mensaje de contacto
+ * a través del servicio de Resend. Valida la entrada y maneja los errores de envío.
+ * @exports sendContactMessage - La función principal que envía el correo.
+ * @exports ContactMessageInput - El tipo de datos para la entrada del formulario.
+ * @exports ContactMessageOutput - El tipo de datos para la respuesta de la función.
  */
 
 import { z } from 'zod';
 import { Resend } from 'resend';
 
-// Esquema de validación para la entrada del formulario
+// Esquema de validación para la entrada del formulario, usando Zod.
 const ContactMessageInputSchema = z.object({
-  name: z.string(),
-  email: z.string().email(),
+  name: z.string().min(1, 'El nombre es requerido.'),
+  email: z.string().email('El correo electrónico no es válido.'),
   phone: z.string().optional(),
-  message: z.string(),
+  message: z.string().min(1, 'El mensaje es requerido.'),
 });
 
-// Esquema de la respuesta
+// Esquema de la respuesta de la función.
 const ContactMessageOutputSchema = z.object({
   success: z.boolean(),
   error: z.string().optional(),
@@ -28,19 +29,25 @@ export type ContactMessageInput = z.infer<typeof ContactMessageInputSchema>;
 export type ContactMessageOutput = z.infer<typeof ContactMessageOutputSchema>;
 
 const TO_EMAIL = 'auto_shock@hotmail.com';
-const FROM_EMAIL = 'onboarding@resend.dev'; // Resend requiere un dominio verificado, usamos este para desarrollo/demo
+const FROM_EMAIL = 'onboarding@resend.dev'; // Resend requiere un dominio verificado, usamos este para desarrollo/demo.
 
 /**
- * Envía un correo de contacto utilizando Resend.
- * @param input Los datos del formulario de contacto.
- * @returns Un objeto indicando si la operación fue exitosa.
+ * Envía un correo de contacto utilizando el servicio de Resend.
+ * @param {ContactMessageInput} input Los datos del formulario de contacto.
+ * @returns {Promise<ContactMessageOutput>} Un objeto indicando si la operación fue exitosa y un mensaje de error opcional.
  */
 export async function sendContactMessage(input: ContactMessageInput): Promise<ContactMessageOutput> {
   try {
     const validation = ContactMessageInputSchema.safeParse(input);
     if (!validation.success) {
-      console.error('Validation Error:', validation.error);
-      return { success: false, error: 'Datos de entrada no válidos.' };
+      console.error('Error de Validación:', validation.error.flatten().fieldErrors);
+      // Devolvemos el primer error encontrado para ser mostrado al usuario.
+      const firstError = Object.values(validation.error.flatten().fieldErrors)[0]?.[0];
+      return { success: false, error: firstError || 'Datos de entrada no válidos.' };
+    }
+
+    if (!process.env.RESEND_API_KEY) {
+      throw new Error('La variable de entorno RESEND_API_KEY no está configurada.');
     }
 
     const resend = new Resend(process.env.RESEND_API_KEY);
@@ -67,14 +74,14 @@ export async function sendContactMessage(input: ContactMessageInput): Promise<Co
     });
 
     if (error) {
-      console.error('Resend Error:', error);
-      return { success: false, error: 'Error al enviar el correo.' };
+      console.error('Error de Resend:', error);
+      return { success: false, error: 'Error al enviar el correo electrónico.' };
     }
 
-    console.log('Email sent successfully:', data);
+    console.log('Correo enviado exitosamente:', data);
     return { success: true };
-  } catch (err) {
-    console.error('Server Error:', err);
+  } catch (err: unknown) {
+    console.error('Error del Servidor:', err);
     const errorMessage = err instanceof Error ? err.message : 'Un error inesperado ocurrió.';
     return { success: false, error: errorMessage };
   }
